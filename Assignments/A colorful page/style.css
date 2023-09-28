@@ -1,0 +1,30 @@
+
+body {
+    background-image: url('./images/back.png');
+}
+header {
+    padding: 20px;
+    margin: 30px;
+    background-color: rgb(205, 180, 219);
+    color: rgb(72, 12, 168);
+}
+.ullist {
+background-color:rgba(162, 210, 255, .30);
+color: rgb(72, 12, 168);
+}
+.p1 {
+    margin: 20px;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange);
+    color: rgb(72, 12, 168);
+} 
+.p2 {
+    margin: 20px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: rgb(72, 12, 168);
+}
+footer {
+    margin: 20px;
+    border: solid 2px red;
+    background-color: white;
+    color: rgb(72, 12, 168);
+}
