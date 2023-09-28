@@ -1,0 +1,12 @@
+.art1 {
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.art2 {
+padding: 30px;
+font-family: 'Courier New', Courier, monospace;
+}
+header {
+    margin: 30px;
+    opacity: .5;
+}
