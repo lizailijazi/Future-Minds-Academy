@@ -1,0 +1,20 @@
+h1 {
+    background-color: blue;
+    color: aquamarine;
+    border: solid 2px red;
+}
+h2 {
+    background-color: coral;
+    color: blueviolet;
+    border: solid 2px blue;
+}
+h3{
+    color: goldenrod;
+    background-color: steelblue;
+    border: dotted 4px salmon;
+}
+p {
+    color: olive;
+    background-color: darkcyan;
+    border: 4px black dotted;
+}
