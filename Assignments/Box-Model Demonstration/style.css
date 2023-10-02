@@ -1,0 +1,9 @@
+p{
+    width: 300px;
+    background-color: rgb(226, 125, 182);
+    padding: 40px;
+    border: 10px solid rgb(67, 159, 193);
+    margin: 50px;
+    text-align: center;
+    text-decoration: underline blue 2px;
+}
