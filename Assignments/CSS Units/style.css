@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+section{
+    height: 25vh;
+    margin: 0;
+    font-family: "young serif";
+    margin-left: 10px;
+}
+section:nth-child(even){
+   background-color: blueviolet;
+   color: azure;
+}
+section:nth-child(odd){
+    background-color: gray;
+    color: blue;
+    height: 25vh;
+}
+hr{
+   width: 33%;
+   border: solid red 1px;
+}
+.no{
+    text-decoration: underline blue solid 2px;
+}
+.yes{
+    text-decoration: underline azure solid 2px;
+}
+h1{
+    font-size: 1.2em;
+}
+p{
+    font-size: 0.9em;
+}
