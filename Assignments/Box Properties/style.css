@@ -1,0 +1,19 @@
+body {
+    background-color: cornflowerblue;
+}
+p{
+    background-color: darksalmon;
+    border: 3px solid blue;
+    padding: 4px;
+    margin: 30px;
+}
+img {
+    cursor: pointer;
+    float: left;
+    padding: 3px;
+    margin: 2px 4px;
+    border: 4px dashed transparent;
+}
+img:hover{
+    border: 4px slateblue dashed;
+}
