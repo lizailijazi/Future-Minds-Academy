@@ -1,0 +1,12 @@
+h1{
+    position: relative;
+    left: 10px;
+    font-size: 1em;
+
+}
+section{
+    border: solid salmon 1px;
+    margin-bottom: 20px;
+    background-color: darksalmon;
+    width: 70%;
+}

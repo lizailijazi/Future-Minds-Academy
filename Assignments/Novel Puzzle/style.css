@@ -3,9 +3,11 @@ p {
     width: 500px;
     font-family: "Young Serif" ;
 }
+
 .span1 {
     font-size: 50px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
   .has-dropcap:first-letter {
