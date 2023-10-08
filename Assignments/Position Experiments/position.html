@@ -49,12 +49,15 @@
         <input type="button" value="x" class="button-5" />
       </form>
     </section>
-    <iframe
-      src="https://www.youtube.com/embed/HteQt1mkRfM?si=WMs6uCsUG9MZZs7q"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <div class="container">
+      <video controls autoplay muted>
+        <source
+          src="./videos/nature.mp4"
+          src="./videos/nature.webm"
+          alt="A video of nature clips"
+        />
+      </video>
+      <p class="video">A 30 second video of nature</p>
+    </div>
   </body>
 </html>

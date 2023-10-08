@@ -2,10 +2,12 @@ body{
     background-color:  Thistle;
     margin-top: 10%;
 }
+
+
 h1{
-margin: 2px;
-position: relative;
-top: -15px;
+    margin: 2px;
+    position: relative;
+    top: -15px;
 }
 
 section{
@@ -15,26 +17,15 @@ section{
     width: 70%;
     box-shadow: 10px 5px 5px grey;
     height: 70px;
+    position: relative;
 }
  p{
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
     margin: 10px;
     padding: 3px;
  
 }
-iframe{
-    width: 200px;
-    height: 100px;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    padding: 20px;
-    border: 1px solid grey;
-    margin: 10px;
-    border-radius: 5%;
-}
-
 .button {
     background-color: red;
     margin: 10px;
@@ -43,8 +34,8 @@ iframe{
     border: solid red 1px;
     border-radius: 100%;
     position: absolute;
-    top: 50px;
-    right: 190px;
+    top: -20px;
+    right: -20px;
 }
 .button-2 {
     background-color: red;
@@ -54,8 +45,8 @@ iframe{
     border: solid red 1px;
     border-radius: 100%;
     position: absolute;
-    top: 140px;
-    right: 190px;
+    top: -20px;
+    right: -20px;
 }
 .button-3 {
     background-color: red;
@@ -65,8 +56,8 @@ iframe{
     border: solid red 1px;
     border-radius: 100%;
     position: absolute;
-    top: 230px;
-    right: 190px;
+    top: -20px;
+    right: -20px;
 }
 .button-4 {
     background-color: red;
@@ -76,8 +67,8 @@ iframe{
     border: solid red 1px;
     border-radius: 100%;
     position: absolute;
-    top: 320px;
-    right: 190px;
+    top: -20px;
+    right: -20px;
 }
 .button-5 {
     background-color: red;
@@ -87,7 +78,32 @@ iframe{
     border: solid red 1px;
     border-radius: 100%;
     position: absolute;
-    top: 415px;
-    right: 190px;
+    top: -20px;
+    right: -20px;
+}
+.container{
+    position: fixed;
+    bottom: 20px;
+    right: 2px;
+    padding: 4px;
+    margin: 1px;
+    width: 250px;
+    height: 160px;
+    border: 1px solid grey;
+    border-radius: 5%;
+}
+video{
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    margin: 2px;
+    top: 5px;
+}
+.video{
+    position: absolute;
+    bottom: -9px;
+    left: 20px;
 }
 
