@@ -1,0 +1,188 @@
+body{
+    background-image: url('./images/hearties.jpeg');
+    font-family: 'young serif';
+    cursor: url('./img/cursor2.png'), auto;
+}
+header{
+    position: relative;
+    height: 25vh;
+}
+h1 {
+    text-align: center;
+    border: dotted #FF8FAB 2px;
+    width: 50vw;
+    padding: 2px;
+    margin: 3px;
+    position: absolute;
+    left: 300px;
+    font-size: 3rem;
+}
+.projects-a{
+    border: solid #FF8FAB 1px;
+    background-color: #FFC2D1;
+    border-radius: 10%;
+    width: 120px;
+    height: 35;
+    padding: 2px;
+    margin: 2px;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+}
+.contact-a {
+    border: solid #FF8FAB 1px;
+    background-color: #FFC2D1;
+    border-radius: 10%;
+    width: 120px;
+    height: 55;
+    position: absolute;
+    top: 122px;
+    left: 680px;
+}
+.projects-a:hover{
+    border: solid 3px #FB6F92;
+    background-color: #FF8FAB;
+    cursor: url('./img/cursor2.png'), auto;
+}
+.contact-a:hover{
+    border: solid 3px #FB6F92;
+    background-color: #FF8FAB;
+    cursor: url('./img/cursor2.png'), auto;
+}
+a:visited{
+    color: #d6708a;
+}
+.vl {
+    border-left: 2px solid black;
+    height: 30px;
+    position: absolute;
+    top: 120px;
+    left: 652px;
+  }
+
+  article{
+    background-color: #FB6F92;
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid ;
+    border-radius: 3%;
+}
+article:hover{
+    background-color: #d6708a;
+    border: black solid 4px;
+    cursor: url('./img/cursor2.png'), auto;
+}
+  img {
+    border-radius: 10%;
+    position: relative;
+    left: 460px;
+  }
+figcaption {
+    position: relative;
+    left: 500px;
+}
+h2{
+    text-align: center;
+    border: solid #FF8FAB 2px;
+    width: 25%;
+    padding: 2px;
+    margin: 3px;
+    position: relative;
+    left: 450px;
+}
+
+
+ul{
+    background-color: #FFC2D1;
+    width: 75%;
+    border: #d6708a dotted 3px;
+    position: absolute;
+    left: 100px;
+    text-align: center;
+    
+}
+.education {
+    background-color: #d6708a;
+    padding: 2px;
+    margin: 2px;
+    width: 90%;
+    position: relative;
+    left: 40px;
+    border: black solid 2px;
+    height: 20vh;
+}
+.education:hover{
+    border: hotpink dotted 5px ;
+    cursor: url('./img/cursor2.png'), auto;
+}
+table{
+    border-collapse: collapse;
+    border: #FB6F92 1px solid;
+    position: absolute;
+    left: 435px;
+    bottom: 20px;
+    background-color: #FFC2D1;
+}
+.skills {
+    width: 90%;
+    background-color: #FFB3C6;
+    padding: 2px;
+    margin: 2px;
+    height: 20vh;
+    position: relative;
+    left: 40px;
+    border: solid black 2px;
+}
+.skills:hover{
+    border: hotpink dotted 5px ;
+    cursor: url('./img/cursor2.png'), auto;
+}
+.projects {
+    width: 90%;
+    height: 20vh;
+    position: relative;
+    left: 40px;
+    padding: 2px;
+    margin: 2px;
+    background-color: #FF8FAB;
+    border: solid black 2px;
+}
+.projects:hover{
+    border: hotpink dotted 5px ;
+    cursor: url('./img/cursor2.png'), auto;
+}
+ol{
+    padding: 10px;
+    position: absolute;
+    left: 450px;
+    bottom: 15;
+}
+.pr-links{
+    padding: 2px;
+    background-color: #FFC2D1;
+    border: black solid 1px;
+    border-radius: 10%;
+    height: 5px;
+}
+.pr-links:hover{
+    background-color: black;
+    border: #FFC2D1 solid 3px;
+    cursor: url('./img/cursor2.png'), auto;
+}
+.pr-1{
+    position: relative;
+    bottom: 20px;
+}
+.pr-2{
+    position: relative;
+    bottom: 10px;
+}
+.pr-3{
+    position: relative;
+    bottom: 5px;
+}
+footer{
+    background-color: hotpink;
+    border: solid 3px black;
+    text-align: center;
+}
