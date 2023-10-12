@@ -1,0 +1,143 @@
+body{
+    background-image: url('./images/purple.jpeg');
+    font-family: 'young serif';
+    cursor: url('./img/cursor2.png'), auto;
+    margin: 0.5em 10% 0 10%;
+}
+
+
+h1{
+    text-align: center;
+    border: 2px solid;
+    padding: 2px;
+    background-color: #C3A29E;
+}
+header{
+    text-align: center;
+}
+vl{
+    border: 1px solid black;
+}
+.contact{
+    border: #B185A7 solid 2px;
+    border-radius: 10px;
+    background-color: #D6CCC2;
+    margin: 3px;
+    padding: 2px;
+    margin-left: 5px;
+}
+.home{
+    border: #B185A7 solid 2px;
+    border-radius: 10px;
+    background-color: #D6CCC2;
+    margin: 3px;
+    padding: 2px;
+    margin-right: 5px;
+}
+.home:hover{
+    background-color: #B185A7;
+    border: black 3px solid;
+}
+.contact:hover{
+    background-color: #B185A7;
+    border: black 3px solid;
+}
+a{
+    border: #B185A7 solid 2px;
+    border-radius: 10px;
+    background-color: #D6CCC2;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    background-color: #B185A7;
+    border: black 3px solid;
+    cursor: url('./img/cursor2.png'), auto;
+}
+
+
+
+section:hover{
+   border: black dashed 3px;
+   background-color: #B5838D;
+}
+
+
+.pr-1{
+    border: #8D6B94 solid 3px;
+    border-radius: 7px;
+    background-color: #B185A7;
+    padding: 3px;
+}
+
+.h2-1{
+    text-align: center;
+    border: #E8DBC5 solid 2px;
+    background-color: #C3A29E;
+    margin: 0 60px;
+}
+.h3-1{
+    background-color: #C3A29E;
+    border: #E8DBC5 solid 2px;
+    text-align: center;
+    margin: 5px 45px;
+}
+figure{
+    text-align: center;
+}
+img{
+    border: black solid 2px;
+    width: justify; 
+}
+
+
+
+.pr-2{
+    border: #8D6B94 solid 3px;
+    background-color: #C3A29E;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+.h2-2{
+    background-color: #8D6B94;
+    margin: 4px 60px;
+    text-align: center;
+    border: #E8DBC5 solid 2px;
+}
+.h3-2{
+    background-color: #8D6B94;
+    border: #E8DBC5 solid 2px;
+    text-align: center;
+    margin: 5px 45px;
+}
+
+
+
+.pr-3{
+    border: #8D6B94 solid 3px;
+    border-radius: 7px;
+    background-color: #E8DBC5;
+    padding: 3px;
+}
+
+.h2-3{
+    background-color: #C3A29E;
+    margin: 4px 60px;
+    text-align: center;
+    border: #B185A7 solid 2px;
+}
+.h3-3{
+    background-color: #C3A29E;
+    border: #B185A7 solid 2px;
+    text-align: center;
+    margin: 5px 45px;
+}
+
+
+
+footer{
+    background-color: #B5838D;
+    border: black solid 3px;
+}

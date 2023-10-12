@@ -1,43 +1,39 @@
+
 body{
     background-image: url('./images/hearties.jpeg');
     font-family: 'young serif';
     cursor: url('./img/cursor2.png'), auto;
+    margin: 0.5em 10% 0 10%;
 }
+
+
+
 header{
-    position: relative;
     height: 25vh;
+    margin: 10px;
+    text-align: center;
 }
 h1 {
     text-align: center;
     border: dotted #FF8FAB 2px;
-    width: 50vw;
     padding: 2px;
     margin: 3px;
-    position: absolute;
-    left: 300px;
     font-size: 3rem;
 }
 .projects-a{
     border: solid #FF8FAB 1px;
     background-color: #FFC2D1;
-    border-radius: 10%;
-    width: 120px;
-    height: 35;
+    border-radius: 10px;
     padding: 2px;
     margin: 2px;
-    position: absolute;
-    top: 120px;
-    left: 500px;
 }
 .contact-a {
     border: solid #FF8FAB 1px;
     background-color: #FFC2D1;
-    border-radius: 10%;
-    width: 120px;
-    height: 55;
-    position: absolute;
-    top: 122px;
-    left: 680px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
 }
 .projects-a:hover{
     border: solid 3px #FB6F92;
@@ -53,109 +49,107 @@ a:visited{
     color: #d6708a;
 }
 .vl {
-    border-left: 2px solid black;
+    border: black 1px solid;
     height: 30px;
-    position: absolute;
-    top: 120px;
-    left: 652px;
+    text-align: center;
+    margin: 3px;
+    margin-right: 9px;
   }
 
-  article{
+
+
+
+article{
     background-color: #FB6F92;
-    margin: 20px;
+    margin: 2px;
     padding: 5px;
     border: 2px solid ;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 article:hover{
     background-color: #d6708a;
     border: black solid 4px;
-    cursor: url('./img/cursor2.png'), auto;
 }
-  img {
+img {
     border-radius: 10%;
-    position: relative;
-    left: 460px;
+  }
+figure{
+    text-align: center;
   }
 figcaption {
-    position: relative;
-    left: 500px;
+    text-align: center;
 }
+
+
+
+
 h2{
     text-align: center;
     border: solid #FF8FAB 2px;
-    width: 25%;
     padding: 2px;
-    margin: 3px;
-    position: relative;
-    left: 450px;
+    margin: 6px;
 }
 
 
-ul{
-    background-color: #FFC2D1;
-    width: 75%;
-    border: #d6708a dotted 3px;
-    position: absolute;
-    left: 100px;
-    text-align: center;
-    
-}
 .education {
     background-color: #d6708a;
     padding: 2px;
     margin: 2px;
-    width: 90%;
-    position: relative;
-    left: 40px;
+    text-align: center;
     border: black solid 2px;
-    height: 20vh;
 }
 .education:hover{
     border: hotpink dotted 5px ;
-    cursor: url('./img/cursor2.png'), auto;
 }
-table{
-    border-collapse: collapse;
-    border: #FB6F92 1px solid;
-    position: absolute;
-    left: 435px;
-    bottom: 20px;
+ul{
     background-color: #FFC2D1;
+    border: #d6708a dotted 3px;
 }
+
+
+
+
+
 .skills {
-    width: 90%;
     background-color: #FFB3C6;
     padding: 2px;
     margin: 2px;
     height: 20vh;
-    position: relative;
-    left: 40px;
+    text-align: center;
     border: solid black 2px;
 }
 .skills:hover{
     border: hotpink dotted 5px ;
-    cursor: url('./img/cursor2.png'), auto;
 }
+table{
+    border-collapse: collapse;
+    border: #FB6F92 1px solid;
+    text-align: center;
+    background-color: #FFC2D1;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+
+
 .projects {
-    width: 90%;
-    height: 20vh;
-    position: relative;
-    left: 40px;
-    padding: 2px;
+    padding: 5px;
     margin: 2px;
     background-color: #FF8FAB;
     border: solid black 2px;
 }
 .projects:hover{
     border: hotpink dotted 5px ;
-    cursor: url('./img/cursor2.png'), auto;
+}
+.project-h2{
+    margin: 10px;
+    margin-bottom: 30px;
+    border: #d6708a solid 2px;
 }
 ol{
-    padding: 10px;
-    position: absolute;
-    left: 450px;
-    bottom: 15;
+    padding: 2px;
+    margin: 20px;
 }
 .pr-links{
     padding: 2px;
@@ -172,15 +166,22 @@ ol{
 .pr-1{
     position: relative;
     bottom: 20px;
+    margin: 10px;
+    margin-top: 10px;
 }
 .pr-2{
     position: relative;
     bottom: 10px;
+    margin: 10px;
 }
 .pr-3{
     position: relative;
     bottom: 5px;
+    margin: 10px;
 }
+
+
+
 footer{
     background-color: hotpink;
     border: solid 3px black;
