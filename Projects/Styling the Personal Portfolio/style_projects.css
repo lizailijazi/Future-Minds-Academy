@@ -1,16 +1,19 @@
 body{
-    background-image: url('./images/purple.jpeg');
+    background-image: url('./images/moon.jpeg');
     font-family: 'young serif';
     cursor: url('./img/cursor2.png'), auto;
     margin: 0.5em 10% 0 10%;
 }
 
 
+
+
 h1{
     text-align: center;
-    border: 2px solid;
+    border:  goldenrod 2px solid;
     padding: 2px;
-    background-color: #C3A29E;
+    background-color: #F08080;
+    color: white;
 }
 header{
     text-align: center;
@@ -19,125 +22,158 @@ vl{
     border: 1px solid black;
 }
 .contact{
-    border: #B185A7 solid 2px;
+    border: white solid 2px;
     border-radius: 10px;
-    background-color: #D6CCC2;
+    background-color: gold;
     margin: 3px;
     padding: 2px;
     margin-left: 5px;
 }
+/* nstream linkun direkt npamje dmth ion*/
 .home{
-    border: #B185A7 solid 2px;
+    border: white solid 2px;
     border-radius: 10px;
-    background-color: #D6CCC2;
+    background-color: gold;
     margin: 3px;
     padding: 2px;
     margin-right: 5px;
 }
-.home:hover{
-    background-color: #B185A7;
-    border: black 3px solid;
-}
-.contact:hover{
-    background-color: #B185A7;
-    border: black 3px solid;
-}
+
 a{
-    border: #B185A7 solid 2px;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 100px;
+    border: white solid 2px;
     border-radius: 10px;
-    background-color: #D6CCC2;
+    background-color: gold;
 }
 a:visited{
-    color: purple;
+    color: #4F000B;
 }
 a:hover{
-    background-color: #B185A7;
-    border: black 3px solid;
+    background-color: pink;
+    border: white 3px solid;
     cursor: url('./img/cursor2.png'), auto;
 }
 
-
+section{
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 20px;
+}
 
 section:hover{
-   border: black dashed 3px;
-   background-color: #B5838D;
+   border: white dashed 5px;
+   background-color: #FBC4AB;
 }
 
 
 .pr-1{
-    border: #8D6B94 solid 3px;
+    border: goldenrod solid 3px;
     border-radius: 7px;
-    background-color: #B185A7;
-    padding: 3px;
+    background-color: #F08080;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
 
 .h2-1{
     text-align: center;
-    border: #E8DBC5 solid 2px;
-    background-color: #C3A29E;
+    border: goldenrod solid 2px;
+    background-color: #F4978E;
     margin: 0 60px;
+    text-shadow: 2px 2px 5px red;
 }
 .h3-1{
-    background-color: #C3A29E;
-    border: #E8DBC5 solid 2px;
+    background-color: #F4978E;
+    border: goldenrod solid 2px;
     text-align: center;
     margin: 5px 45px;
+    text-shadow: 2px 2px 5px red;
 }
 figure{
     text-align: center;
 }
 img{
-    border: black solid 2px;
-    width: justify; 
+    border:  solid 2px;
+    border-radius: 10px;
 }
-
+.pic-1{
+    width: 80%;
+}
 
 
 .pr-2{
-    border: #8D6B94 solid 3px;
-    background-color: #C3A29E;
+    border: #FFDAB9 solid 3px;
+    background-color: #F8AD9D;
     border-radius: 7px;
-    padding: 3px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
-
+ .pr-2:hover{
+    background-color: #FFDAB9;
+ }
 .h2-2{
-    background-color: #8D6B94;
+    background-color: #F4978E;
     margin: 4px 60px;
     text-align: center;
-    border: #E8DBC5 solid 2px;
+    border: #F08080 solid 2px;
+    text-shadow: 2px 2px 5px red;
 }
 .h3-2{
-    background-color: #8D6B94;
-    border: #E8DBC5 solid 2px;
+    background-color: #F4978E;
+    border: #F08080 solid 2px;
     text-align: center;
     margin: 5px 45px;
+    text-shadow: 2px 2px 5px red;
 }
+
+
+.pic-2{
+    width: 80%;
+}
+.pic-3{
+    width: 80%;
+}
+
 
 
 
 .pr-3{
-    border: #8D6B94 solid 3px;
+    border: #F08080 solid 3px;
     border-radius: 7px;
-    background-color: #E8DBC5;
-    padding: 3px;
+    background-color: #FFDAB9;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
-
+ .pr-3:hover{
+    background-color: #F4978E;
+ }
 .h2-3{
-    background-color: #C3A29E;
+    background-color: #FBC4AB;
     margin: 4px 60px;
     text-align: center;
-    border: #B185A7 solid 2px;
+    border: #F08080 solid 2px;
+    color: white;
+    text-shadow: 2px 2px 5px red;
 }
 .h3-3{
-    background-color: #C3A29E;
-    border: #B185A7 solid 2px;
+    background-color: #FBC4AB;
+    border: #F08080 solid 2px;
     text-align: center;
     margin: 5px 45px;
+    color: white;
+    text-shadow: 2px 2px 5px red;
 }
 
 
 
 footer{
-    background-color: #B5838D;
+    background-color: goldenrod;
     border: black solid 3px;
 }

@@ -1,0 +1,143 @@
+body{
+    background-image: url('./images/stars.jpeg');
+    font-family: 'young serif';
+    cursor: url('./img/cursor2.png'), auto;
+    margin: 0.5em 10% 0 10%;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    background-color: #EDAFB8;
+    color: grey;
+    border: #B0C4B1 solid 3px;
+}
+.projects{
+    border-radius: 10px;
+    background-color: #DEDBD2;
+    margin: 3px;
+    padding: 2px;
+    margin-left: 5px;
+    border: #B0C4B1 solid 2px;
+}
+
+.home{
+    border: #B0C4B1 solid 2px;
+    border-radius: 10px;
+    background-color: #DEDBD2;
+    margin: 3px;
+    padding: 2px;
+    margin-right: 5px;
+}
+.home:hover{
+    background-color: #F7E1D7;
+    border: #4A5759 3px solid;
+    color: grey;
+}
+.projects:hover{
+    color: grey;
+    background-color: #F7E1D7;
+    border: #4A5759 3px solid;
+}
+vl{
+    border: 1px solid black;
+}
+a{
+    cursor: url('./img/cursor2.png'), auto;
+    color: black;
+}
+ a:visited{
+    color: #4A5759;
+ }
+ 
+
+section{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+section:hover{
+    border: dotted 5px #4A5759;
+    background-color: #DEDBD2;
+}
+
+.sec-1{
+    margin: 50px 0 50px 0;
+    background-color: #EDAFB8;
+    border: #B0C4B1 solid 3px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
+}
+
+
+
+button{
+   background-color: grey;
+}
+
+button:hover{
+    background-color: pink;
+}
+.email{
+    margin: 20px;
+    background-color: #B0C4B1;
+    border: #4A5759 solid 2px;
+    border-radius: 5px;
+}
+textarea{
+    margin: 20px;
+    background-color: #B0C4B1;
+    border: #4A5759 solid 2px;
+    border-radius: 5px;
+}
+
+
+
+.sec-2{
+    margin: 50px 0 50px 0;
+    background-color: #B0C4B1;
+    border: #EDAFB8 solid 3px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
+}
+img{
+    margin: 10px;
+}
+
+.linkedin{
+    border: #0077b5 dashed 2px;
+    border-radius: 10px;
+}
+
+.facebook{
+    border: #316FF6 dashed 2px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.insta{
+    border: #D62976 dashed 2px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+
+.linkedin:hover{
+    background-color: rgba(0, 119, 181, 0.3);
+}
+.facebook:hover{
+    background-color:  rgba(49, 111, 246, 0.3);
+}
+.insta:hover{
+    background-color: rgba(214, 41, 118, 0.3);
+    
+}
+
+
+footer{
+    background-color: #F7E1D7;
+    text-align: center;
+    margin-top: 40px;
+    border: black solid 3px;
+}

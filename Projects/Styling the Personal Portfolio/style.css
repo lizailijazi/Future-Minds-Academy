@@ -45,9 +45,15 @@ h1 {
     background-color: #FF8FAB;
     cursor: url('./img/cursor2.png'), auto;
 }
+a{
+    text-decoration: none;
+}
 a:visited{
     color: #d6708a;
 }
+
+
+
 .vl {
     border: black 1px solid;
     height: 30px;
@@ -62,9 +68,10 @@ a:visited{
 article{
     background-color: #FB6F92;
     margin: 2px;
-    padding: 5px;
+    padding: 20px;
     border: 2px solid ;
     border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
 article:hover{
     background-color: #d6708a;
@@ -72,6 +79,7 @@ article:hover{
 }
 img {
     border-radius: 10%;
+    width: 250px;
   }
 figure{
     text-align: center;
@@ -80,7 +88,9 @@ figcaption {
     text-align: center;
 }
 
-
+section{
+    padding: 20px;
+}
 
 
 h2{
@@ -93,10 +103,11 @@ h2{
 
 .education {
     background-color: #d6708a;
-    padding: 2px;
+    padding: 20px;
     margin: 2px;
     text-align: center;
     border: black solid 2px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
 .education:hover{
     border: hotpink dotted 5px ;
@@ -112,11 +123,12 @@ ul{
 
 .skills {
     background-color: #FFB3C6;
-    padding: 2px;
+    padding: 20px;
     margin: 2px;
     height: 20vh;
     text-align: center;
     border: solid black 2px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
 .skills:hover{
     border: hotpink dotted 5px ;
@@ -126,18 +138,21 @@ table{
     border: #FB6F92 1px solid;
     text-align: center;
     background-color: #FFC2D1;
-    margin: 10px;
-    margin-top: 20px;
+    margin: auto;
+    width: 75%;
+    height: 50%;
+
 }
 
 
 
 
 .projects {
-    padding: 5px;
+    padding: 20px;
     margin: 2px;
     background-color: #FF8FAB;
     border: solid black 2px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
 }
 .projects:hover{
     border: hotpink dotted 5px ;
@@ -159,7 +174,7 @@ ol{
     height: 5px;
 }
 .pr-links:hover{
-    background-color: black;
+    background-color: #762438;
     border: #FFC2D1 solid 3px;
     cursor: url('./img/cursor2.png'), auto;
 }
@@ -167,7 +182,6 @@ ol{
     position: relative;
     bottom: 20px;
     margin: 10px;
-    margin-top: 10px;
 }
 .pr-2{
     position: relative;
