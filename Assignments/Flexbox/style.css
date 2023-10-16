@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    background-color: cornflowerblue;
+    margin: 1em;
+    padding: 1em;
+    border: 3px solid black;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.flex-child{
+    background-color: cornsilk;
+    border-radius: 20px;
+    padding: 1em;
+    color: black;
+}
