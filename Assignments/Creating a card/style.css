@@ -28,6 +28,7 @@ img{
     border: 1px solid black;
     height: 500px; 
 }
+
 .card-price{
     display: flex;
     justify-content: center;
@@ -57,3 +58,8 @@ img{
 vl{
     border: 1px solid black;
 }
+
+/*jo perqindje, jo width height, fonts ma tvogla,
+ position abs me relatove nparent,
+ edhe me top bottom aand stuff nimgs jo heights widths 
+  edhe me gap image me 100%*/
