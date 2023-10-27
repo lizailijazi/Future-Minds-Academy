@@ -1,0 +1,55 @@
+
+body{
+   margin: 30px;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 400px;
+}
+
+
+
+
+.row-1{
+    background-color: pink;
+}
+
+
+
+.column{
+    background-color: hotpink;
+}
+
+
+.column-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+.row-2{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
