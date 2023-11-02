@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: "young serif";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+ }
+ 
+ 
+ 
+ .blog-aside{
+     background-color: hwb(220 13% 65%);
+     text-align: end;
+     bottom: 0;
+     padding: 20px; 
+     grid-area: 1 / 1 / 4 / 2; 
+     position: sticky;
+     bottom: 0;
+     top: 0;
+     left: 0;
+ }
+ 
+ .aside-title{
+     text-transform: uppercase; 
+     color: antiquewhite;
+     margin: 0;
+ }
+ 
+ .aside-description{
+     color: rgb(141, 142, 177);
+     margin: 0;
+ }
+ 
+ 
+ button{
+     color:  rgb(141, 142, 177);
+     border: 2px solid  rgb(141, 142, 177);
+     padding: 7px;
+     margin-top: 10px;
+     background-color: hwb(220 13% 65%);
+ }
+ 
+ 
+ 
+ 
+ 
+ .blog-main{
+     margin: 70px;
+ }
+ 
+ .post-type{
+     color: grey;
+     text-transform: uppercase;
+     font-size: 10px;
+     margin: 0;
+ }
+ 
+ 
+ 
+ .pinned-post{
+    grid-area: 1 / 2 / 2 / 3;
+ }
+ 
+ .blog-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ 
+ img{
+     width: 40px;
+     height: 40px;
+     border: 1px black solid;
+     border-radius: 100%;
+     margin: 20px;
+ }
+ 
+.post-title{
+    grid-column: 1 / 2;
+}
+
+
+ .blog-user{
+     color: rgb(66, 147, 219);
+ }
+ 
+ .green-css{
+     background-color: green;
+     padding: 5px;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .blue-html{
+     background-color: rgb(51, 157, 199);
+     padding: 5px;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .red-java{
+     background-color: rgb(208, 40, 40);
+     padding: 5px;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .post-description{
+     color: rgb(78, 72, 72);
+ }
+ 
+ h2{
+     font-size: 2em;
+ }
+ 
+ 
+ 
+ .post-pin{
+     width: 15px;
+     height: 15px;
+     border: none;
+ }
+ 
+ 
+ 
+ .pink-python{
+     background-color: hotpink;
+     padding: 5px;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ 
+ 
+ 
+ 
+ .second-recent-post{
+     margin-top: 50px;
+ }
