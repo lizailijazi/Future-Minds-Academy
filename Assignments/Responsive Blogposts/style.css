@@ -1,3 +1,27 @@
+@media (max-width: 480px) {
+    body{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .blog-aside{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .blog-main{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+}
+
+
+
+
+
+
+
 body{
     margin: 0;
     font-family: "young serif";
@@ -137,6 +161,8 @@ body{
  .second-recent-post{
      margin-top: 50px;
  }
+ 
+ 
  
  
  

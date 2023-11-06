@@ -1,0 +1,96 @@
+body{
+    margin: 20;
+    background-color: bisque;
+    text-align: center;
+}
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes appear {
+    from{
+        visibility: hidden;
+    }
+
+    to{
+        visibility: visible;
+    }
+}
+
+
+
+
+
+p{
+    animation-name: appear;
+    animation-duration: 1s;
+    visibility: hidden;
+    margin: 0;
+}
+
+
+
+
+
+input{
+    width: 60vw;
+    background-color: rgb(194, 241, 194);
+    padding: 10px;
+}
+
+img{
+    margin: 40px;
+    width: 40px;
+    animation-name: rotate;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left:200px;
+    bottom: 70px;
+}
+
+
+
+
+
+
+
+
+button{
+    background-color: rgb(128, 231, 128);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
