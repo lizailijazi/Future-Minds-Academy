@@ -1,6 +1,6 @@
 body{
     margin: 20;
-    background-color: bisque;
+    background-color: rgb(154, 195, 144);
     text-align: center;
 }
 
@@ -15,37 +15,40 @@ body{
     }
 }
 
-
-@keyframes appear {
+ @keyframes appear {
     from{
-        visibility: hidden;
+        opacity: 0%;
+        top: 8px;
     }
 
     to{
-        visibility: visible;
+        opacity: 100%;
+        top: -2px;
     }
-}
+}  
 
 
 
 
 
-p{
-    animation-name: appear;
-    animation-duration: 1s;
-    visibility: hidden;
-    margin: 0;
-}
+
 
 
 
 
 
 input{
-    width: 60vw;
     background-color: rgb(194, 241, 194);
     padding: 10px;
+    margin: 8px;
+    width: 70vw;
 }
+
+
+
+
+
+
 
 img{
     margin: 40px;
@@ -56,12 +59,17 @@ img{
     animation-timing-function: linear;
     position: relative;
     left:200px;
-    bottom: 70px;
+    bottom: 90px;
 }
 
 
 
-
+form{
+    border: solid black 2px;
+    width: 80vw;
+    text-align: center;
+    background-color: cadetblue;
+}
 
 
 
@@ -69,12 +77,25 @@ img{
 button{
     background-color: rgb(128, 231, 128);
     color: black;
+    margin: 20px;
 }
 
 
+span{
+    position: relative;
+    top: 8px;
+    right: 150px;
+    opacity: 0%;
 
+}
 
+input:focus + span {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 
+}
+  
 
 
 
