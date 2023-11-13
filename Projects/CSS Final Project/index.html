@@ -17,46 +17,42 @@
   <body>
     <header>
       <div class="header-start">
-        <span class="material-icons icon-more" title=" See more"
-          >more_vert</span
-        >
+        <span class="material-icons icon-more" title="See more">more_vert</span>
         <h1 class="header-title">Dashboard</h1>
       </div>
       <div class="header-info">
         <form>
           <input type="search" class="search-bar" placeholder="Search" />
         </form>
-        <span class="material-icons search-icon" title="search">search</span>
-        <span class="material-icons" title="dashboard">dashboard</span>
+        <span class="material-icons search-icon" title="Search">search</span>
+        <span class="material-icons" title="Dashboard">dashboard</span>
         <div class="notification-bell-info">
-          <span class="material-icons notification-bell" title="notifications"
+          <span class="material-icons notification-bell" title="Notifications"
             >notifications</span
           >
-          <span class="notifications">5</span>
+          <span class="notifications-number">5</span>
+          <ul class="notification-bar">
+            <li class="notification">John Doe sent a message</li>
+            <li class="notification">Someone viewed your profile</li>
+            <li class="notification">John Doe sent a message</li>
+            <li class="notification">Someone viewed your profile</li>
+            <li class="notification">Another notification</li>
+          </ul>
         </div>
-        <!-- <div class="notification-bar">
-          <p>John Doe sent a message</p>
-          <p>Someone viewed your profile</p>
-          <p>John Doe sent a message</p>
-          <p>Someone viewed your profile</p>
-          <p>Another notification</p>
-        </div>-->
         <span class="material-icons" title="profile">person</span>
       </div>
     </header>
     <nav>
       <h2>CP &nbsp;&nbsp;&nbsp;COOL PAGE</h2>
       <hr />
-      <div class="nav-element">
+      <div class="nav-element avatar-info">
         <img
           src="images/avatar.jpg"
           alt="a picture of a woman"
           class="avatar-img"
         />
         <h3>John Doe</h3>
-        <span class="material-icons avatar-down-icon" title="Down">
-          arrow_drop_down</span
-        >
+        <span class="material-icons down" title="Down"> arrow_drop_down</span>
       </div>
       <hr />
       <div class="dropdown-menu">
@@ -109,9 +105,291 @@
       </div>
     </nav>
     <main>
-      <article></article>
-      <section></section>
+      <article>
+        <div class="article-top">
+          <span class="material-icons globe-icon" title="Globe">language</span>
+          <h2 class="article-title">Global Sales by Top Locations</h2>
+        </div>
+        <div class="article-bottom">
+          <table>
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#x1F1F8;</span>-->
+                🇺🇸USA
+              </td>
+              <td>2.920</td>
+              <td>2.920</td>
+            </tr>
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#127466;</span>-->🇩🇪 Germany
+              </td>
+              <td>1.300</td>
+              <td>4.34%</td>
+            </tr>
+
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#127482;</span>-->🇦🇺Australia
+              </td>
+              <td>760</td>
+              <td>20.43%</td>
+            </tr>
+
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#127463;</span>-->🇬🇧United
+                Kingdom
+              </td>
+              <td>690</td>
+              <td>10.35%</td>
+            </tr>
+
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#127476;</span>-->🇷🇴Romania
+              </td>
+              <td>600</td>
+              <td>7.87%</td>
+            </tr>
+
+            <tr class="article-row">
+              <td>
+                <!--<span class="article-emojis">&#127479;</span>-->🇧🇷 Brasil
+              </td>
+              <td>550</td>
+              <td>5.94%</td>
+            </tr>
+          </table>
+          <iframe
+            frameborder="0"
+            style="border: none; overflow: hidden"
+            allowfullscreen="true"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            scrolling="no"
+            src="https://511ny.org/Map/EmbeddedMap?region=ALL&layers=&size=0"
+            width="810px"
+            height="640px"
+          ></iframe>
+        </div>
+      </article>
+
+      <section class="section-info">
+        <div class="section">
+          <div class="section-top">
+            <div>
+              <span class="material-icons section-chair-icon" title="Space"
+                >chair</span
+              >
+            </div>
+            <div>
+              <p class="section-type">Bookings</p>
+              <br />
+              <span class="section-number">184</span>
+            </div>
+          </div>
+          <hr />
+          <div class="section-bottom">
+            <span class="material-icons section-icon" title="Space"
+              >warning</span
+            >
+            <p class="section-type">Get more space</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-top">
+            <div>
+              <span
+                class="material-icons section-trackings-icon"
+                title="Trackings"
+                >bar_charts</span
+              >
+            </div>
+
+            <div>
+              <p class="section-type">Website Visits</p>
+              <br />
+              <span class="section-number">75.521</span>
+            </div>
+          </div>
+          <hr />
+          <div class="section-bottom">
+            <span class="material-icons section-icon" title="Trackings"
+              >sell</span
+            >
+            <p class="section-type">Tracked from Google Analytics</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-top">
+            <div>
+              <span class="material-icons section-finance-icon" title="Finance"
+                >store</span
+              >
+            </div>
+            <div>
+              <p class="section-type">Revenue</p>
+              <br />
+              <span class="section-number">$34,245</span>
+            </div>
+          </div>
+
+          <hr />
+          <div class="section-bottom">
+            <span class="material-icons section-icon" title="Calendard"
+              >calendar_month</span
+            >
+            <p class="section-type">Last 24 Hours</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-top">
+            <div>
+              <span class="material-icons section-world-icon" title="World"
+                >public</span
+              >
+            </div>
+            <div>
+              <p class="section-type">Followers</p>
+              <br />
+              <span class="section-number">+245</span>
+            </div>
+          </div>
+          <hr />
+          <div class="section-bottom">
+            <span class="material-icons section-icon" title="Update"
+              >update</span
+            >
+            <p class="section-type">Last Updated</p>
+          </div>
+        </div>
+      </section>
+      <section class="card-section">
+        <h2>Manage Listings</h2>
+        <div class="cards-container">
+          <div class="card-1">
+            <div class="card-top">
+              <div class="img-edit">
+                <img
+                  src="images/card-1.jpeg"
+                  alt="a picture of a castle in the mountains"
+                  class="card-img"
+                />
+                <div class="img-edit-icons">
+                  <span class="material-icons options-icon" title="View"
+                    >image</span
+                  ><span class="material-icons edit-icon" title="Edit "
+                    >edit</span
+                  >
+                  <span class="material-icons delete-icon" title="Delete"
+                    >close</span
+                  >
+                </div>
+              </div>
+              <h3 class="card-title">Cozy 5 Stars Apartment</h3>
+              <p class="card-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+              </p>
+              <hr />
+            </div>
+
+            <div class="card-bottom">
+              <div class="card-bottom-start"><p>$899/night</p></div>
+              <div class="card-bottom-end">
+                <span class="material-icons" title="Location">location_on</span>
+                <p>Barcelona, Spain</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-2">
+            <div class="card-top">
+              <div class="img-edit">
+                <img
+                  src="images/card-2.jpeg"
+                  alt="a picture of an office studio"
+                  class="card-img"
+                />
+                <div class="img-edit-icons">
+                  <span class="material-icons options-icon" title="View"
+                    >image</span
+                  ><span class="material-icons edit-icon" title="Edit"
+                    >edit</span
+                  >
+                  <span class="material-icons delete-icon" title="Delete"
+                    >close</span
+                  >
+                </div>
+              </div>
+              <h3 class="card-title">Office Studio</h3>
+              <p class="card-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+              </p>
+              <hr />
+              <div class="card-bottom">
+                <div class="card-bottom-start">
+                  <p>$1.119/night</p>
+                </div>
+                <div class="card-bottom-end">
+                  <span class="material-icons">location_on</span>
+                  <p>London, UK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-3">
+            <div class="card-top">
+              <div class="img-edit">
+                <img
+                  src="images/card-3.jpeg"
+                  alt="a picture of an apartment"
+                  class="card-img"
+                />
+                <div class="img-edit-icons">
+                  <span class="material-icons options-icon" title="View"
+                    >image</span
+                  ><span class="material-icons edit-icon" title="Edit"
+                    >edit</span
+                  >
+                  <span class="material-icons delete-icon" title="Delete"
+                    >close</span
+                  >
+                </div>
+              </div>
+              <h3 class="card-title">Beautiful Castle</h3>
+              <p class="card-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+              </p>
+              <hr />
+              <div class="card-bottom">
+                <div class="card-bottom-start"><p>$459/night</p></div>
+                <div class="card-bottom-end">
+                  <span class="material-icons">location_on</span>
+                  <p>Milan, Italy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+      </section>
+
+      <footer>
+        <div class="footer-start">
+          <p class="footer-descripitons">HOME</p>
+          <p class="footer-descripitons">COMPANY</p>
+          <p class="footer-descripitons">PORTFOLIO</p>
+          <p class="footer-descripitons">BLOG</p>
+        </div>
+        <div class="footer-end">
+          <p class="footer-descripitons">John Doe, 2023</p>
+        </div>
+      </footer>
     </main>
-    <footer></footer>
   </body>
 </html>

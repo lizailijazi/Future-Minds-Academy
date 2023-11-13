@@ -1,24 +1,36 @@
+:root{
+    --body-color: lightgrey;
+    --shadow: 10px 10px 5px grey;
+    --body-element-color: white;
+}
+
+
+
 body{
     margin: 0;
     height: 100vh;
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-columns: minmax(250px, auto) 1fr;
     box-sizing: border-box;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--body-color);
     font-family: 'roboto';
+    font-weight: lighter;
 }
 
 
 nav{
     grid-column: 1 / 2;
-    grid-template-rows: 1 / 5;
+    grid-row: 1 / 2;
     padding: 10px;
+    margin-bottom: 0;
     height: 100vh;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
     background-image: url(images/sidebar-1.jpg);
     size: cover; 
     color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 p{
@@ -41,7 +53,6 @@ h2, h3, h1{
 .nav-element{
     margin: 20px 0 20px 0;
     display: flex;
-    /* justify-content: space-; */
     padding: 5px;
     border-radius: 5px; 
 }
@@ -51,6 +62,7 @@ h2, h3, h1{
 .down{
     justify-self: flex-end;
     padding-left: 20px;
+    margin-left: auto;
 }
 .dropdown:focus{
     background-color: rgb(195, 49, 122);
@@ -62,21 +74,30 @@ h2, h3, h1{
 
 
 .dashboard{
-    background-color: rgb(255, 98, 0); 
+    background-color: orangered; 
 }
 
-
+.avatar-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 header{
     padding: 10px;
     margin: 5px;
+    /* margin-bottom: 0; */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2em;
+    box-sizing: border-box;
+    height: 4rem;
 }
 
 .icon-more{
+    margin-top: 0;
     padding: 0.5rem;
     height: 1em;
     border-radius: 50%;
@@ -90,7 +111,8 @@ header{
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-fill-mode: forwards;
 }
-@keyframes   icon-shadow{
+
+@keyframes icon-shadow{
     from{
         box-shadow:  0 0 4px 2px rgba(0,0,0,0.6);
     }
@@ -100,19 +122,12 @@ header{
     }
 }
 
-.notification-bar{
-    visibility: hidden;
-    margin: 0;
-}
-
 .header-start{
-    padding: .8rem;
-    display: flex;
     padding: 1rem;
+    display: flex;
 }
 
 .header-info{
-    margin: 0;
     padding: 1rem;
     display: flex;
 }
@@ -125,12 +140,12 @@ header{
 .search-bar{
     border: none;
     border-bottom: 2px solid grey;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--body-color);
     outline: none;
 }
 
 .search-bar:focus{
-    border-bottom: 2px solid rgb(159, 66, 66);
+    border-bottom: 2px solid rgb(247, 30, 30);
     outline: none;
 }
 
@@ -141,6 +156,7 @@ header{
     border-radius: 50%;
     background-color: white;
     box-shadow:  0 0 4px 2px rgba(0,0,0,0.6);
+    align-self: center;
 }
 
 .search-icon:hover{
@@ -153,7 +169,7 @@ header{
    position: relative;
 }
 
-.notifications{
+.notifications-number{
     position: absolute;
     top: -5;
     right: 7px;
@@ -167,8 +183,348 @@ header{
     font-size: small;
 }
 
+.notification-bell{
+    position: relative;
+}
+/*     nav- height overflow y scroll qdo sen border box  
+ */  
+.notification-bar{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 1.8rem;
+    background-color: white;
+    padding: 1rem;
+    width: 14rem;
+    color: grey;
+    list-style: none;
+}
+
+ .notification-bell-info:hover .notification-bar{
+   display: block;
+}
 
 
+.notification{
+    padding: .6rem;
+}
+.notification:hover{
+    background-color: orangered;
+    color: white;
+}
+main{
+    margin-top: 6rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+article{
+    margin-top: 10rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    grid-row: 1 / 2;
+    background-color: var(--body-element-color);
+    display: flex;
+    flex-direction: column;
+}
+.article-emojis{
+    font-size: 20px;
+}
+iframe{
+    width: 50vw;
+    height: 20rem;
+    margin-left: 0;
+}
+
+.globe-icon{
+    padding: 1rem;
+    padding-top: 1.2rem;
+    height: 2.5rem;
+    width: 3rem;
+    box-shadow: var(--shadow);
+    background-color: rgb(49, 167, 49);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: -3rem;
+    right: 1rem;
+} 
+.article-title{
+    margin-top: 0;
+}
+.article-top{
+    display: flex;
+}
+.article-bottom{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+
+td{
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey; 
+}
+
+
+
+
+section{
+    margin-top: 0;
+}
+.section-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+}
+
+
+.section{
+    width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color:  var(--body-element-color);
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+}
+
+
+
+
+
+
+
+
+
+
+.section-chair-icon{
+    padding: 1.7rem;
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    top: -2rem;
+    box-shadow: var(--shadow);
+}
+
+.section-trackings-icon{
+    padding: 1.7rem;
+    padding-right: 0;
+    background-color: rgb(194, 25, 109);
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    top: -2rem;
+    box-shadow: var(--shadow);
+}
+
+.section-finance-icon{
+    padding: 1.7rem;
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    top: -2rem;
+    box-shadow: var(--shadow);
+}
+.section-world-icon{
+    padding: 1.7rem;
+    background-color: rgb(51, 182, 225);
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    top: -2rem;
+    box-shadow: var(--shadow)
+}
+.section-top{
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+}
+.section-number{
+    padding-right: .7rem;
+    font-size: 1.5rem;
+}
+.section-type{
+    color: grey;
+}
+
+.section-bottom{
+    padding: 1rem;
+    padding-left: .2rem;
+    display: flex;
+    align-items: center;
+}
+.section-icon{
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+
+
+.cards-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    box-sizing: border-box;
+}
+
+.card-1{
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    background-color:   var(--body-element-color);
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+}
+
+.card-img{
+    margin: 0;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: -3rem;
+}
+
+.card-title{
+    margin: 0;
+    text-align: center;
+}
+
+.card-description{
+    text-align: center;
+}
+.card-bottom{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-2{
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    background-color:  var(--body-element-color);
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+}
+.card-3{
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    background-color:  var(--body-element-color);
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+}
+
+
+
+
+.card-bottom-end{
+    display: flex;
+}
+.img-edit{
+    position: relative;
+    display: flex;
+}
+
+.img-edit-icons{
+    display: none;
+    position: absolute;
+    bottom: 2.8rem;
+    left: 6.5rem;
+}
+
+@keyframes img-move {
+    from{
+        top: -3rem;
+    }
+
+    to{
+        top: -5rem;
+    }
+}
+/* @keyframes edit-icons-appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+} */
+
+.card-img:hover{
+    animation-name: img-move;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+}
+.card-img:hover + .img-edit-icons{
+   display: block;
+}
+
+.view-icon{
+    color: grey;
+}
+.edit-icon{
+    color: green;
+}
+.delete-icon{
+    color: red;
+}
+
+
+footer{
+    width: 69rem;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / 3;
+    box-sizing: border-box;
+    overflow-y: scroll;
+} 
+
+.footer-start{
+    display: flex;
+    padding: 1rem;
+}
+
+.footer-descripitons{
+    margin: 1rem;
+}
+.footer-hr{
+    width: 70rem;
+}
+.footer-end{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* 
+@media (max-width: 1000px)  {
+    nav{
+        visibility: hidden;
+    }
+    
+    
+} */
+
+
+
+/*ask per smoother set down on the pics, notification bar goes behind pics*/
 
 
 
