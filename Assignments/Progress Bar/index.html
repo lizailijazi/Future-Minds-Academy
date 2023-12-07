@@ -15,6 +15,9 @@
         margin-inline: 1rem;
         padding: 0.5rem;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 0.5rem;
       }
       .indicator {
@@ -23,6 +26,7 @@
         color: grey;
       }
       .progress-bar-wrapper {
+        height: 30rem;
         flex-grow: 1;
         position: relative;
       }
@@ -30,9 +34,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
-        width: 0%;
-        background-color: cyan;
+        right: 0;
+        width: 30px;
+        height: 0%;
+        background-color: blue;
       }
     </style>
   </head>
@@ -64,7 +69,7 @@
 
       let progressBar = document.getElementById("bar");
       progressBar.style.backgroundColor = color;
-      progressBar.style.width = `&{percentage}`;
+      progressBar.style.height = `${percentage}%`;
     </script>
   </body>
 </html>
