@@ -3,69 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Closest Answer Game</title>
     <style>
       * {
         box-sizing: border-box;
       }
       body {
         margin: 0;
-        text-align: center;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: monospace;
       }
-      .game-container {
-        margin-top: 10rem;
-        padding: 1rem;
+      .correct-answer-content {
+        padding: 2rem;
         background-color: black;
+        border-radius: 5px;
+      }
+      .title {
+        color: white;
+        font-size: 1.2rem;
+      }
+      .players {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+      }
+      .player-1 {
+        padding: 0.8rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-      }
-      .correct-answer {
-        color: white;
-        font-family: monospace;
-      }
-      .winner-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .player-one,
-      .player-two {
-        height: 5rem;
-        color: white;
-        font-family: monospace;
-        font-size: 1rem;
-        background-color: green;
-        text-align: center;
-        display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid transparent;
+        gap: 0.5em;
+      }
+      .player-2 {
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        border: 1px solid transparent;
+        gap: 0.5em;
+      }
+      #first-answer {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      #second-answer {
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     </style>
   </head>
+
   <body>
-    <div class="game-container">
-      <h1 id="correct-answer" class="correct-answer">The correct answer is</h1>
-      <div class="winner-container">
-        <div>
-          <p id="player-one" class="player-one">Player One <br /></p>
+    <div class="correct-answer-content">
+      <span class="title" id="title-content"></span>
+      <div class="players">
+        <div class="player-1" id="player-one">
+          <div>Player One</div>
+          <div class="1-answer" id="first-answer"></div>
         </div>
-        <div>
-          <p id="player-two" class="player-two">Player Two <br /></p>
+        <div class="player-2" id="player-two">
+          <div>Player Two</div>
+          <div class="2-answer" id="second-answer"></div>
         </div>
       </div>
     </div>
     <script>
       let answer = Math.floor(Math.random() * 20) + 1;
+
       let playerOne = parseInt(prompt("Player One:"));
       let playerTwo = parseInt(prompt("Player Two:"));
 
-      if (isNaN(playerOne) || isNaN(playerTwo)) {
+      if (isNaN(playerOne) || isNaN(playerTwo))
         throw new Error("Please write only numbers!");
-      }
+
       if (playerOne < 0 || playerOne > 20 || playerTwo < 0 || playerTwo > 20) {
         throw new Error("Only select numbers between 0-20");
       }
@@ -73,24 +92,37 @@
       let playerOneDistance = Math.abs(answer - playerOne);
       let playerTwoDistance = Math.abs(answer - playerTwo);
 
-      document.getElementById(
-        "correct-answer"
-      ).innerHTML = `The correct answer is ${answer}`;
-
-      let playerOneChange = getElementById("player-one");
-      let playerTwoChange = getElementById("player-one");
-
       let winner;
-      if (playerOneDistance < playerTwoDistance) {
-        playerOneChange.innerHTML = `Player one ${answer}`;
-
-        playerTwoChange.innerHTML = `Player two ${answer}`;
-
-        playerOneChange.style.backgroundColor = green;
-        playerTwoChange.style.backgroundColor = red;
-      } else if (playerOneDistance == playerTwoDistance) {
-        winner = isf;
+      if (playerOneDistance < playerTwoDistance) winner = "Player One";
+      else if (playerOneDistance > playerTwoDistance) winner = "Player Two";
+      else {
+        winner = "It's a tie.";
       }
+
+      let colorPlayerOne;
+      let colorPlayerTwo;
+
+      if (playerOneDistance < playerTwoDistance) {
+        colorPlayerOne = "green";
+        colorPlayerTwo = "red";
+      } else if (playerOneDistance > playerTwoDistance) {
+        colorPlayerOne = "red";
+        colorPlayerTwo = "green";
+      } else {
+        colorPlayerOne = "orange";
+        colorPlayerTwo = "orange";
+      }
+
+      let playerOneDiv = document.getElementById("player-one");
+      let playerTwoDiv = document.getElementById("player-two");
+      let title = document.getElementById("title-content");
+      title.innerHTML = `The correct answer is ${answer}`;
+      playerOneDiv.style.backgroundColor = colorPlayerOne;
+      playerTwoDiv.style.backgroundColor = colorPlayerTwo;
+      let firstAnswerDiv = document.getElementById("first-answer");
+      let secondAnswerDiv = document.getElementById("second-answer");
+      firstAnswerDiv.innerHTML = `${playerOne}`;
+      secondAnswerDiv.innerHTML = `${playerTwo}`;
     </script>
   </body>
 </html>

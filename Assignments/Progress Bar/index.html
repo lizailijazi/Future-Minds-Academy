@@ -15,7 +15,7 @@
         margin-inline: 1rem;
         padding: 0.5rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
@@ -29,13 +29,13 @@
         height: 30rem;
         flex-grow: 1;
         position: relative;
+        width: 30px;
       }
       .progress-bar {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
-        width: 30px;
         height: 0%;
         background-color: blue;
       }
@@ -70,6 +70,7 @@
       let progressBar = document.getElementById("bar");
       progressBar.style.backgroundColor = color;
       progressBar.style.height = `${percentage}%`;
+      progressBar.setAttribute("title", `${percentage}%`);
     </script>
   </body>
 </html>

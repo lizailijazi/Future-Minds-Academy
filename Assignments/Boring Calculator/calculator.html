@@ -12,7 +12,7 @@
         "What operation do you want to apply?"
       ).toLowerCase();
       let num2 = parseFloat(prompt("Write another number here:"));
-      let output;
+      let result;
       // validation
 
       if (isNaN(num1) || isNaN(num2)) {
@@ -33,25 +33,25 @@
 
       switch (operator) {
         case "addition":
-          output = num1 + num2;
+          result = num1 + num2;
           break;
         case "substraction":
-          output = num1 - num2;
+          result = num1 - num2;
           break;
 
         case "multiplication":
-          output = num1 * num2;
+          result = num1 * num2;
           break;
 
         case "division":
-          output = num1 / num2;
+          result = num1 / num2;
           break;
         case "modulus":
-          output = num1 % num2;
+          result = num1 % num2;
           break;
       }
 
-      console.log(output);
+      console.log(result);
     </script>
   </body>
 </html>
