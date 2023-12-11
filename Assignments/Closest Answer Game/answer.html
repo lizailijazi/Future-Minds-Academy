@@ -16,7 +16,7 @@
         height: 100vh;
         font-family: monospace;
       }
-      .correct-answer-content {
+      .answer-container {
         padding: 2rem;
         background-color: black;
         border-radius: 5px;
@@ -25,9 +25,11 @@
         color: white;
         font-size: 1.2rem;
       }
-      .players {
+      .players-container {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
       }
       .player-1 {
@@ -63,9 +65,9 @@
   </head>
 
   <body>
-    <div class="correct-answer-content">
+    <div class="answer-container">
       <span class="title" id="title-content"></span>
-      <div class="players">
+      <div class="players-container">
         <div class="player-1" id="player-one">
           <div>Player One</div>
           <div class="1-answer" id="first-answer"></div>
