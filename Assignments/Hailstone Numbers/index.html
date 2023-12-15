@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hailstone Numbers</title>
+  </head>
+  <body>
+    <script>
+      let userNumber = Math.abs(parseInt(prompt("Enter a number:")));
+
+      while (isNaN(userNumber) || userNumber <= 0) {
+        alert("Invalid input. Please enter a number.");
+        userNumber = Math.abs(parseInt(prompt("Enter a number:")));
+      }
+
+      for (; userNumber !== 1; ) {
+        alert(userNumber);
+        if (userNumber % 2 == 0) {
+          userNumber /= 2;
+        } else {
+          userNumber = userNumber * 3 + 1;
+        }
+      }
+      alert(1);
+
+      //the javascript ninja
+      //libgen.li
+
+      //eloquent jaascript
+
+      //       function helloWorld() {
+      //         //print hello world 10 times
+      //         console.log("Hello World");
+      //         for(let i= 0; i < 10; i++)
+      //       }
+
+      // function print(inputString){
+      //   console.log(inputString)
+      // }
+
+      // print('Hellooo')
+
+      // let name = prompt("Write name");
+      // let surname = prompt("last name");
+      // function greet(name, surname) {
+      //   return `Welcome ${name} ${surname}`;
+      // }
+
+      // let greeting = greet("Filan", "Fisteky");
+    </script>
+  </body>
+</html>
