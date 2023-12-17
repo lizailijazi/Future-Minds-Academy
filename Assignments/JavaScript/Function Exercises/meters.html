@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name and Surname</title>
+    <title>Meters</title>
   </head>
   <body>
     <script>
-      function nameAndSurname(name, surname) {
-        return console.log(`Welcome, ${name} ${surname}`);
+      function convert(kilometers) {
+        let equation = kilometers * 0.621371;
+        return console.log(equation);
       }
 
-      nameAndSurname("Liza, Ilijazi");
+      convert(5.3);
     </script>
   </body>
 </html>
