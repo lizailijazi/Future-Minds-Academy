@@ -258,6 +258,7 @@ header{
    color: white;
 }
 main{
+   margin-left: 2rem;
    padding: 1rem;
    text-align: center;
    grid-column: 2 / 3;
@@ -435,7 +436,7 @@ section{
 .cards-container{
    margin-top: 4rem;
    display: grid;
-   grid-template-columns: repeat(2 , 1fr);
+   grid-template-columns: repeat(3 , 1fr);
    gap: 3rem;
    box-sizing: border-box;
 }
@@ -524,7 +525,7 @@ section{
 .img-edit-icons{
   position: relative;
   top: -3rem;
-  right: 0rem;
+  left: .3rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -610,6 +611,7 @@ footer{
      grid-template-columns: 1fr;
   }
    main{
+      margin-left: 0;
        grid-column: 1 / 2;
    }
   
