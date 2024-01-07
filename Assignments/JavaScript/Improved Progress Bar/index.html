@@ -64,9 +64,9 @@
 
       function modifyProgressBar(percentage, color) {
         let progressbar = document.getElementById("bar");
+        progressbar.title = `${percentage}%`;
         progressbar.style.backgroundColor = color;
         progressbar.style.height = `${percentage}%`;
-        progressbar.title = `${percentage}%`;
       }
 
       function setProgress() {

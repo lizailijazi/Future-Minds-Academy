@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createRectangle() {
+        let width = prompt("What is the width of the room you want to create?");
+        let length = prompt(
+          "What is the length of the room you want to create?"
+        );
+        if (width || length == NaN) {
+          throw new Error("!!Please write a number!!");
+        }
+
+        let rectangle = document.createElement("div");
+        rectangle.style.width = width + "px";
+        rectangle.style.height = height = "px";
+        rectangle.style.backgroundColor = "steelblue";
+        document.body.appendChild(rectangle);
+      }
+
+      createRectangle();
+    </script>
+  </body>
+</html>
