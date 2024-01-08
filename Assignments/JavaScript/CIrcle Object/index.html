@@ -51,13 +51,13 @@
         },
       };
 
-      let equals = function (object) {
+      function equals(object) {
         if (circle.radius && circle.center == object.radius && object.center) {
-          return console.log(true);
+          console.log(true);
         } else {
-          return console.log(false);
+          console.log(false);
         }
-      };
+      }
 
       equals(otherCircle);
     </script>
