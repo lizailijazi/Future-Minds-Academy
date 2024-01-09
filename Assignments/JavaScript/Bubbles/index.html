@@ -5,34 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 0;
+      }
       .bubble {
-        border-radius: 50%;
-        position: fixed;
+        background-color: red;
         opacity: 0.7;
+        position: fixed;
+        animation: moveUpDown 5s infinite alternate;
+      }
+
+      @keyframes moveUpDown {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
       }
     </style>
   </head>
+
   <body>
     <script>
-      function createBubble() {
-        for (let i = 0; i < 300; i++) {
-          let bubble = document.createElement("div");
-          let size = Math.random() * 100 + "px";
-          bubble.style.height = size;
-          bubble.style.width = size;
-          bubble.style.backgroundColor = Math.floor(
-            Math.random() * 16777215
-          ).toString(16);
-          bubble.style.top = Math.random() * 100 + "%";
-          bubble.style.left = Math.random() * 100 + "%";
-          bubble.classList.add("bubble");
-          document.body.appendChild(bubble);
-        }
-        return bubble;
+      function getRandomColor() {
+        let randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+          Math.random() * 256
+        )}, ${Math.floor(Math.random() * 256)})`;
+        return randomColor;
       }
-      // for (let i = 0; i < 300; i++) {
-      //   createBubble();
-      // }
+
+      for (let i = 0; i < 300; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+        let size = Math.random() * 100 + "px";
+        bubble.style.width = size;
+        bubble.style.height = size;
+        bubble.style.borderRadius = "50%";
+        bubble.style.top = Math.random() * 100 + "vh";
+        bubble.style.left = Math.random() * 100 + "vw";
+        bubble.style.backgroundColor = getRandomColor();
+        bubble.style.animationDelay = Math.random() * 5 + "s";
+        document.body.appendChild(bubble);
+      }
     </script>
   </body>
 </html>

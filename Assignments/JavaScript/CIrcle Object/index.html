@@ -41,25 +41,27 @@
         printDetails: function () {
           console.log(`This circles radius is = ${this.radius}.`);
         },
-      };
+        equals: function (otherCircle) {
+          if (!otherCircle) {
+            console.error("Invalid circle object provided.");
+            return false;
+          }
 
-      let otherCircle = {
-        radius: 6,
-        center: {
-          x: 9,
-          y: 7,
+          return (
+            this.radius == otherCircle.radius &&
+            this.center.x == otherCircle.center.x &&
+            this.center.y == otherCircle.center.y
+          );
         },
       };
 
-      function equals(object) {
-        if (circle.radius && circle.center == object.radius && object.center) {
-          console.log(true);
-        } else {
-          console.log(false);
-        }
-      }
+      let otherCircle = {
+        radius: 5,
+        center: { x: 0, y: 0 },
+      };
 
-      equals(otherCircle);
+      circle.printDetails();
+      console.log(circle.equals(otherCircle));
     </script>
   </body>
 </html>
