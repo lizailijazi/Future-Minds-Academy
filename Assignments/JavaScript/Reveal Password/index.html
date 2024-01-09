@@ -11,7 +11,11 @@
       let input = document.getElementById("input");
 
       input.addEventListener("mouseover", () => {
-        input.setAttribute("type", "text");
+        input.type = "text";
+      });
+
+      input.addEventListener("mouseleave", () => {
+        input.type = "password";
       });
     </script>
   </body>
