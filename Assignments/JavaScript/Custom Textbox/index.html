@@ -20,6 +20,9 @@
         margin-top: 5rem;
         font-size: 1.3rem;
       }
+      #textarea:empty {
+        content: "Placeholder";
+      }
     </style>
   </head>
   <body>
@@ -27,6 +30,9 @@
       let textBox = document.createElement("textarea");
       textBox.placeholder = "Write something";
       document.addEventListener("keypress", (event) => {
+        if (event.key == "Enter") {
+          currentContent += "<br></br>";
+        }
         let character = event.key;
         let currentContent = textBox.textContent;
         textBox.textContent = currentContent + character;
