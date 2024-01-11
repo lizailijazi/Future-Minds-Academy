@@ -10,6 +10,7 @@
         height: 100vh;
       }
       .bubble {
+        border-radius: 50%;
         background-color: red;
         opacity: 0.7;
         position: fixed;
@@ -45,7 +46,7 @@
           let size = Math.random() * 100 + "px";
           bubble.style.width = size;
           bubble.style.height = size;
-          bubble.style.borderRadius = "50%";
+
           bubble.style.top = Math.random() * 100 + "vh";
           bubble.style.left = Math.random() * 100 + "vw";
           bubble.style.backgroundColor = getRandomColor();
