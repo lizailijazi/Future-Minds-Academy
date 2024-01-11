@@ -25,6 +25,7 @@
   <body>
     <script>
       let textBox = document.createElement("textarea");
+      textBox.placeholder = "Write something";
       document.addEventListener("keypress", (event) => {
         let character = event.key;
         let currentContent = textBox.textContent;
