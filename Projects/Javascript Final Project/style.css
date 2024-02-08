@@ -8,7 +8,9 @@
  
  
  
- 
+ body:has(.sidebar.collapse){
+   grid-template-columns: 70px auto;
+ }
  
  body{
     margin: 0;
@@ -20,10 +22,33 @@
     font-family: 'roboto';
     font-weight: 100;
  }
+ #sidebar-control{
+   background-color: var(--body-color);
+   border: none;
+ }
  
- 
- 
-  
+ .collapse .collapse-element{
+   display: none;
+ }
+  .collapse .avatar-img{
+  visibility: hidden;
+  }
+  .collapse .collapse-title{
+   visibility: hidden;
+   }
+
+ .sidebar.collapse{
+   min-width: 0;
+ }
+.sidebar{
+   /* transition-duration: .3s;
+   transition-timing-function: ease-in;
+   transition-delay: .1s; */
+   transition: 0.5s;
+}
+ /* .collapse .dropdown-arrow{
+transform: rotate();
+ } */
  nav{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -82,7 +107,9 @@
     background-color: rgb(195, 49, 122);
  }
  
- 
+ .hamburgerSidebarIcon {
+ background-color: aqua;
+ }
  .dropdown:hover{
     background-color: grey;
     cursor: pointer;
@@ -91,16 +118,10 @@
  .second-dropdown-container{
    display: flex;
    flex-direction: column;
+   padding-left: .3rem;
    display: none;
  }
- .second-dropdown{
-   display: flex;
-   margin: 20px 0 20px 0;
-   display: flex;
-   padding: .8rem;
-   border-radius: 5px;
-   align-items: center;
- }
+
 .second-dropdown-title{
    padding: 10px;
 }
@@ -108,7 +129,12 @@
  .dropdown-elements{
    display: flex;
    flex-direction: column;
-
+   padding: 0;
+   margin: 0;
+ }
+ ul{
+   padding: 0;
+   margin: 0;
  }
  .dashboard{
     background-color: orangered;
@@ -120,6 +146,57 @@
     align-items: center;
     justify-content: space-between;
  }
+ .settings {
+   padding: 2rem;
+   background-color: beige;
+   width: 20rem;
+   height: 25rem;
+   border-radius: 20px;
+   display: none;
+ }
+.button-clicked{
+   border: 1px solid rgb(0, 179, 255);
+}
+
+ .color {
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   margin: 7px;
+   border: white;
+ }
+
+ .purple {
+   background-color: rgb(180, 49, 180);
+ }
+ .blue {
+   background-color: rgb(75, 150, 219);
+ }
+ .green {
+   background-color: rgb(57, 198, 57);
+ }
+ .yellow {
+   background-color: yellow;
+ }
+ .orange {
+   background-color: orange;
+ }
+ .red {
+   background-color: red;
+ }
+ .white {
+   background-color: white;
+ }
+ .black {
+   background-color: black;
+ }
+ .title {
+   text-align: center;
+ }
+
+
+
+
  header{
     padding: 10px;
     margin: 5px;
@@ -623,7 +700,7 @@
  }
  
  
- 
+
  
   @media (max-width: 1000px)  {
    body{
@@ -683,6 +760,11 @@
     .hamburger-icon{
         display: block;
     }
+
+
+    #sidebar-control{
+      display: none;
+    }
  }
   
  
@@ -718,7 +800,7 @@
  
  }
  
- 
+  
  
  
  

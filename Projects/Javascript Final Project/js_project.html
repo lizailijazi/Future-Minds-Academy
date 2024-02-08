@@ -16,145 +16,255 @@
   </head>
   <body>
     <nav id="nav">
-      <h2>CP &nbsp;&nbsp;&nbsp;COOL PAGE</h2>
-      <hr />
-      <div class="nav-element avatar-info">
-        <img
-          src="images/avatar.jpg"
-          alt="a picture of a woman"
-          class="avatar-img"
-        />
-        <h3>John Doe</h3>
-        <span class="material-icons down" title="Down"> arrow_drop_down</span>
-      </div>
-      <hr />
-      <div class="dropdown-menu">
-        <div class="nav-element dashboard">
-          <span class="material-icons" title="Dashboard">dashboard</span>
-          <p>Dashboard</p>
+      <div id="sidebar" class="sidebar">
+        <h2>
+          CP&nbsp;&nbsp;&nbsp;<span class="collapse-element">COOL PAGE</span>
+        </h2>
+        <hr />
+        <div class="nav-element avatar-info">
+          <img
+            src="images/avatar.jpg"
+            alt="a picture of a woman"
+            class="avatar-img"
+          />
+          <h3 class="collapse-element collapse-title">John Doe</h3>
+          <span class="material-icons down collapse-element" title="Down">
+            arrow_drop_down</span
+          ><!--bone secilen element me claass collapse-element-->
         </div>
-        <div class="dropdown-elements">
-          <div class="nav-element dropdown">
-            <span class="material-icons" title="Pages">image</span>
-            <p>Pages</p>
-            <span
-              class="material-icons down"
-              title="Down"
-              onclick="displaySecondDropwon()"
-            >
-              arrow_drop_down</span
-            >
+        <hr />
+        <div class="dropdown-menu">
+          <div class="nav-element dashboard">
+            <span class="material-icons" title="Dashboard">dashboard</span>
+            <p class="collapse-element">Dashboard</p>
           </div>
-          <!-- second dropdown -->
-          <div class="second-dropdown-container" id="second-dropdown-container">
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">P</span>
-              <p class="second-dropdown-info">Pricing</p>
-            </div>
+          <ul>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Pages">image</span>
+                <p class="collapse-element">Pages</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  <!--bone nkejt elementin-->
+                  arrow_drop_down</span
+                >
+              </div>
 
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">RS</span>
-              <p class="second-dropdown-info">RTL Support</p>
-            </div>
+              <!-- second dropdown -->
+              <div
+                class="second-dropdown-container"
+                id="secondDropdownContainer"
+              >
+                <ul class="second-dropdown-list" id="second-dropdown-list">
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">P</span>
+                    <p class="second-dropdown-info">Pricing</p>
+                  </li>
 
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">T</span>
-              <p class="second-dropdown-info">Timeline</p>
-            </div>
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">RS</span>
+                    <p class="second-dropdown-info">RTL Support</p>
+                  </li>
 
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">LP</span>
-              <p class="second-dropdown-info">Login Page</p>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown-elements">
-          <div class="nav-element dropdown">
-            <span class="material-icons" title="Components">apps</span>
-            <p>Components</p>
-            <span
-              class="material-icons down"
-              title="Down"
-              onclick="displaySecondDropdown()"
-            >
-              arrow_drop_down</span
-            >
-          </div>
-          <!-- second dropdown -->
-          <div class="second-dropdown-container" id="second-dropdown-container">
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">B</span>
-              <p class="second-dropdown-info">Buttons</p>
-            </div>
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">T</span>
+                    <p class="second-dropdown-info">Timeline</p>
+                  </li>
 
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">GS</span>
-              <p class="second-dropdown-info">Grid System</p>
-            </div>
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">LP</span>
+                    <p class="second-dropdown-info">Login Page</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Components">apps</span>
+                <p class="collapse-element">Components</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+              <!-- second dropdown -->
+              <div
+                class="second-dropdown-container"
+                id="secondDropdownContainer"
+              >
+                <ul class="second-dropdown-list" id="second-dropdown-list">
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">B</span>
+                    <p class="second-dropdown-info">Buttons</p>
+                  </li>
 
-            <div class="second-dropdown">
-              <span class="second-dropdown-title">P</span>
-              <p class="second-dropdown-info">Panels</p>
-            </div>
-          </div>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Forms">content_paste</span>
-          <p>Forms</p>
-          <span
-            class="material-icons down"
-            title="Down"
-            onclick="displaySecondDropwon()"
-          >
-            arrow_drop_down
-          </span>
-        </div>
-        <!-- second dropdown -->
-        <div class="second-dropdown-container" id="second-dropdown-container">
-          <div class="second-dropdown">
-            <span class="second-dropdown-title">RF</span>
-            <p class="second-dropdown-info">Regular Forms</p>
-          </div>
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">GS</span>
+                    <p class="second-dropdown-info">Grid System</p>
+                  </li>
 
-          <div class="second-dropdown">
-            <span class="second-dropdown-title">EF</span>
-            <p class="second-dropdown-info">Extended Forms</p>
-          </div>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Tables">grid_on</span>
-          <p>Tables</p>
-          <span class="material-icons down" title="Down"> arrow_drop_down</span>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Maps">location_on</span>
-          <p>Maps</p>
-          <span class="material-icons down" title="Down"> arrow_drop_down</span>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Widgets">widgets</span>
-          <p>Widgets</p>
-          <span class="material-icons down" title="Down"> arrow_drop_down</span>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Charts">show_chart </span>
-          <p>Charts</p>
-          <span class="material-icons down" title="Down"> arrow_drop_down</span>
-        </div>
-        <div class="nav-element dropdown">
-          <span class="material-icons" title="Calendar">calendar_month</span>
-          <p>Calendar</p>
-          <span class="material-icons down" title="Down"> arrow_drop_down</span>
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">P</span>
+                    <p class="second-dropdown-info">Panels</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Forms">content_paste</span>
+                <p class="collapse-element">Forms</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down
+                </span>
+              </div>
+              <!-- second dropdown -->
+              <div
+                class="second-dropdown-container"
+                id="secondDropdownContainer"
+              >
+                <ul class="second-dropdown-list" id="second-dropdown-list">
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">RF</span>
+                    <p class="second-dropdown-info">Regular Forms</p>
+                  </li>
+
+                  <li class="second-dropdown nav-element dropdown">
+                    <span class="second-dropdown-title">EF</span>
+                    <p class="second-dropdown-info">Extended Forms</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Tables">grid_on</span>
+                <p class="collapse-element">Tables</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Maps">location_on</span>
+                <p class="collapse-element">Maps</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Widgets">widgets</span>
+                <p class="collapse-element">Widgets</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Charts">show_chart </span>
+                <p class="collapse-element">Charts</p>
+
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+            </li>
+            <li class="dropdown-elements">
+              <div class="nav-element dropdown">
+                <span class="material-icons" title="Calendar"
+                  >calendar_month</span
+                >
+                <p class="collapse-element">Calendar</p>
+                <span class="material-icons down collapse-element" title="Down">
+                  arrow_drop_down</span
+                >
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <main>
+      <div class="settings" id="settings">
+        <div id="sidebarFilters" class="sidebar-filters">
+          <p class="title">SIDEBAR FILTERS</p>
+          <button
+            class="purple color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+
+          <button
+            class="blue color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+          <button
+            class="green color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+          <button
+            class="yellow color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+          <button
+            class="orange color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+          <button
+            class="red color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+        </div>
+
+        <hr />
+
+        <div id="sidebarBackground" class="sidebar-background">
+          <p class="title">SIDEBAR BACKGROUND</p>
+          <button
+            class="white color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+          <button
+            class="black color"
+            id="color"
+            onclick="changeBackgroundColor()"
+          ></button>
+        </div>
+
+        <hr />
+
+        <div id="sidebarImage" class="sidebar-image">
+          <p>Sidebar Image</p>
+          <input type="checkbox" class="checkbox" />
+        </div>
+
+        <hr />
+
+        <div id="sidebarImagesOptions" class="sidebar-images-options">
+          <p class="title">IMAGES</p>
+        </div>
+      </div>
+
       <header>
         <div class="header-start">
-          <span class="material-icons icon-more" title="See more"
-            >more_vert</span
-          >
+          <button id="sidebar-control">
+            <span
+              class="material-icons icon-more"
+              title="See more"
+              id="sidebarCollapseIcon"
+              onclick="if(this.innerHTML =='lists'){this.innerHTML = 'more_vert'}else{this.innerHTML = 'lists' }"
+              >more_vert</span
+            >
+          </button>
 
           <h1 class="header-title">Dashboard</h1>
         </div>
