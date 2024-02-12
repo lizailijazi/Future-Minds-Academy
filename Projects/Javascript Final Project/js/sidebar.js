@@ -14,19 +14,18 @@ sidebar.classList.toggle('collapse')
 
 
 // SECOND DROPDOWNS
-let secondDropdown = document.getElementById('secondDropdownContainer');
+let secondDropdown = document.getElementById('second-dropdown-list');
+let dropdown = document.getElementById('dropdown-container')
+let downArrow = document.getElementById('down')
 
 function displaySecondDropdown() {
-  secondDropdown.addEventListener('click', () => {
+  dropdown.addEventListener('click', () => {
     if (secondDropdown.style.display === 'block') {
       secondDropdown.style.display = 'none';
-      alert('yes')
     } else {
       secondDropdown.style.display = 'block';
-      alert('no')
+      downArrow.style.rotate = '180deg'
     }
-
-    alert('hello');
   });
 }
 

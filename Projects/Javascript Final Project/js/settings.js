@@ -9,3 +9,9 @@ function changeBackgroundColor() {
   changeColor("yellow");
 }
 
+//make a local storage
+
+
+// localStorage('settings', {
+//   sidebarColor: orange
+// })
