@@ -19,8 +19,13 @@ openSettings()
 
 
 // function changeColor(color) {
-//   sidebar.style.background = color;
+//   colorButton.addEventListener('click', ()=>{
+//     sidebar.style.backgroundColor = color;
+//   })
+
 // }
+
+// changeColor(colorButton.style.backgroundColor)
 
 // function changeBackgroundColor() {
 //   // changeColor(colorButton.style.backgroundColor);
