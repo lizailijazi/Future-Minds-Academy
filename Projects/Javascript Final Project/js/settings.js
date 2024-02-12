@@ -6,8 +6,12 @@ let settings = document.getElementById('settings')
 
 function openSettings(){
     settingsicon.addEventListener('click', ()=>{ 
-       settings.style.display = 'block'
-    })
+  
+    if (settings.style.display === 'block') {
+      settings.style.display = 'none';
+    } else {
+      settings.style.display = 'block';
+    }})
 }
 
 
