@@ -1,13 +1,27 @@
 let colorButton = document.getElementById("color");
 let sidebar = document.getElementById("sidebar");
-function changeColor(color) {
-  sidebar.style.background = color;
+let settingsicon = document.getElementById('fixed-icon')
+
+let settings = document.getElementById('settings')
+
+function openSettings(){
+    settingsicon.addEventListener('click', ()=>{ 
+       settings.style.display = 'block'
+    })
 }
 
-function changeBackgroundColor() {
-  // changeColor(colorButton.style.backgroundColor);
-  changeColor("yellow");
-}
+
+openSettings()
+
+
+// function changeColor(color) {
+//   sidebar.style.background = color;
+// }
+
+// function changeBackgroundColor() {
+//   // changeColor(colorButton.style.backgroundColor);
+//   changeColor("yellow");
+// }
 
 //make a local storage
 

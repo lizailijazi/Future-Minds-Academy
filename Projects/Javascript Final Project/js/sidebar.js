@@ -16,7 +16,7 @@ sidebar.classList.toggle('collapse')
 // SECOND DROPDOWNS
 let secondDropdown = document.getElementById('second-dropdown-list');
 let dropdown = document.getElementById('dropdown-container')
-let downArrow = document.getElementById('down')
+// let downArrow = document.getElementById('down')
 
 function displaySecondDropdown() {
   dropdown.addEventListener('click', () => {
@@ -24,7 +24,6 @@ function displaySecondDropdown() {
       secondDropdown.style.display = 'none';
     } else {
       secondDropdown.style.display = 'block';
-      downArrow.style.rotate = '180deg'
     }
   });
 }

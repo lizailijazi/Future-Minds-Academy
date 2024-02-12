@@ -163,7 +163,7 @@ transform: rotate();
    top: 10rem;
    box-shadow: var(--shadow);
    border: 1px grey solid;
-   /* display: none; */
+   display: none;
  }
  .fixed-icon{
    position: absolute;
