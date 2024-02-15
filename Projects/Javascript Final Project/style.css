@@ -5,13 +5,13 @@
     --body-element-color: white;
  }
  
- 
- 
+
  
  body:has(.sidebar.collapse){
-   grid-template-columns: 70px auto;
+   grid-template-columns: 95px auto;  
  }
- 
+
+
  body{
     margin: 0;
     height: 100vh;
@@ -28,22 +28,16 @@
  }
  
  .collapse .collapse-element{
-   display: none;
- }
+   display: none;   }
   .collapse .avatar-img{
-   margin-right: 6rem;
+   margin-right: 6rem;   
   }
   .collapse .collapse-title{
-   visibility: hidden;
+   visibility: hidden;  
    }
 
 
-.sidebar{
-   transition-duration: .3s;
-   transition-timing-function: ease-in;
-   transition-delay: .1s;
-   /* transition: 0.5s; */
-}
+
  /* .collapse .dropdown-arrow{
 transform: rotate();
  } */
@@ -190,6 +184,9 @@ transform: rotate();
    margin: 7px;
    border: white;
  }
+ .color.selected{
+   border: solid 2px blue;
+ }
 
  .purple {
    background-color: rgb(180, 49, 180);
@@ -219,8 +216,40 @@ transform: rotate();
    text-align: center;
  }
 
+ .switch-container {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 40px;
+   height: 20px;
+}
+
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
 
 
+.img{
+   display: flex;
+   flex-wrap: wrap;
+  gap: 8px;
+}
+.img span{
+  flex: 1;
+}
+.img img{
+   width: 100%;
+   border: 2px solid transparent;
+   border-radius: 8px;
+   margin-top: .5rem;
+}
 
  header{
     padding: 10px;
@@ -238,8 +267,10 @@ transform: rotate();
  
  .icon-more{
     margin-top: 0;
-    padding: 0.5rem;
-    height: 1em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 3rem;
     border-radius: 50%;
     background-color: white;
     box-shadow:  0 0 4px 2px rgba(0,0,0,0.6);

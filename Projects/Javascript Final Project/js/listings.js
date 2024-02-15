@@ -1,4 +1,4 @@
-// console.log('hello')
+// // console.log('hello')
 // localStorage.setItem('listings', listings)
 
 
@@ -10,40 +10,46 @@
 // else{
 //     listings = defaultListings
 // }
-// let defaultListings = [
+//  let defaultListings = [
 //     {
 //         id: 1,
-//         name: liz,
-//         description: ok,
+//         name: 'Cozy 5 Stars Apartment',
+//         description: 'A short description',
+//         price: 899,
+//         currency: '$',
 //         location: {
-//             city: 'barcelona',
-//             country: 'italoy'
+//             city: 'Barcelona',
+//             country: 'Spain'
 //         },
 
-//         imageUrl: 'aijdijj',
+//         imageUrl: 'images',
 //     },
 //     {
-//         id: 2,
-//         name: liz,
-//         description: ok,
+//         id: 1,
+//         name: 'Cozy 5 Stars Apartment',
+//         description: 'A short description',
+//         price: 899,
+//         currency: '$',
 //         location: {
-//             city: 'barcelona',
-//             country: 'italoy'
+//             city: 'Barcelona',
+//             country: 'Spain'
 //         },
 
-//         imageUrl: 'aijdijj',
+//         imageUrl: 'images',
 //     },
 
 // {
-//     id: 2,
-//     name: liz,
-//     description: ok,
+//     id: 1,
+//     name: 'Cozy 5 Stars Apartment',
+//     description: 'A short description',
+//     price: 899,
+//     currency: '$',
 //     location: {
-//         city: 'barcelona',
-//         country: 'italoy'
+//         city: 'Barcelona',
+//         country: 'Spain'
 //     },
 
-//     imageUrl: 'aijdijj',
+//     imageUrl: 'images',
 // }
 // ]
 
@@ -52,3 +58,15 @@
 // listings.forEach(listings =>{
 //     root.innerHTML += listings.name + ' '
 // })
+
+
+
+
+
+
+
+
+
+
+
+

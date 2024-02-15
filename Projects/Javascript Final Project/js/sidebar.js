@@ -4,11 +4,16 @@ let sidebarControl = document.getElementById('sidebar-control')
 let sidebar = document.getElementById('sidebar')
 let sidebarControlIcon = document.getElementById('sidebarCollapseIcon')
 
+
 sidebarControl.addEventListener('click', ()=>{
 sidebar.classList.toggle('collapse')
+if(sidebarControlIcon.innerHTML =='lists')
+{sidebarControlIcon.innerHTML = 'more_vert'}
+else{sidebarControlIcon.innerHTML = 'lists' 
+}
 })
 
-// sidebarControlIcon.contains('listsIcon').textcontent = 'lists'
+
 
 
 

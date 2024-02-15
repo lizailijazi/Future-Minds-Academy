@@ -34,7 +34,7 @@
         </div>
         <hr />
         <div class="dropdown-menu">
-          <div class="nav-element dashboard">
+          <div class="nav-element dashboard" id="dashboard">
             <span class="material-icons" title="Dashboard">dashboard</span>
             <p class="collapse-element">Dashboard</p>
           </div>
@@ -195,37 +195,12 @@
         <div class="settings" id="settings">
           <div id="sidebarFilters" class="sidebar-filters">
             <p class="title">SIDEBAR FILTERS</p>
-            <button
-              class="purple color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-
-            <button
-              class="blue color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-            <button
-              class="green color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-            <button
-              class="yellow color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-            <button
-              class="orange color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-            <button
-              class="red color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
+            <button class="purple color" id="color"></button>
+            <button class="blue color" id="color"></button>
+            <button class="green color" id="color"></button>
+            <button class="yellow color" id="color"></button>
+            <button class="orange color" id="color"></button>
+            <button class="red color" id="color"></button>
           </div>
 
           <hr />
@@ -248,35 +223,36 @@
 
           <div id="sidebarImage" class="sidebar-image">
             <p>Sidebar Image</p>
-            <input type="checkbox" class="checkbox" />
+            <div class="switch-container">
+              <label class="switch">
+                <input type="checkbox" id="imageSwitch" name="imageSwitch" />
+                <span class="slider"></span>
+              </label>
+            </div>
           </div>
 
           <hr />
 
           <div id="sidebarImagesOptions" class="sidebar-images-options">
             <p class="title">IMAGES</p>
-            <!-- <div class="img">
-              <span
-                ><a class="img-holder" href="#"
-                  ><img src="images/sidebar-1.jpg" />
-                </a>
+            <div class="img">
+              <span> <img src="images/sidebar-1.jpg" id="settings-pic" /> </span
+              ><span>
+                <img src="images/sidebar-2.jpg" id="settings-pic" /> </span
+              ><span>
+                <img
+                  src="images/sidebar-2.jpg"
+                  class="straight-pic"
+                  id="settings-pic"
+                /> </span
+              ><span>
+                <img
+                  src="images/sidebar-1.jpg"
+                  class="straight-pic"
+                  id="settings-pic"
+                />
               </span>
-              <span
-                ><a class="img-holder" href="#"
-                  ><img src="images/sidebar-2.jpg" />
-                </a>
-              </span>
-              <span
-                ><a class="img-holder" href="#"
-                  ><img src="images/card-1.jpeg" />
-                </a>
-              </span>
-              <span
-                ><a class="img-holder" href="#"
-                  ><img src="images/card-2.jpeg" />
-                </a>
-              </span>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -288,7 +264,6 @@
               class="material-icons icon-more"
               title="See more"
               id="sidebarCollapseIcon"
-              onclick="if(this.innerHTML =='lists'){this.innerHTML = 'more_vert'}else{this.innerHTML = 'lists' }"
               >more_vert</span
             >
           </button>
@@ -568,6 +543,7 @@
             </div>
           </div>
         </div>
+
         <hr class="footer-hr" />
       </section>
 
@@ -587,3 +563,5 @@
     <script src="js/index.js" type="module"></script>
   </body>
 </html>
+
+<!-- onclick="if(this.innerHTML =='lists'){this.innerHTML = 'more_vert'}else{this.innerHTML = 'lists' }"  -->
