@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="date" id="date" />
+    <button onclick="getFacts">Get Fact</button>
+    <script>
+      async function makeRequest(url) {
+        let url =
+          "https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true";
+        const options = {
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Key": "SIGN-UP-FOR-KEY",
+            "X-RapidAPI-Host": "numbersapi.p.rapidapi.com",
+          },
+        };
+
+        try {
+          const response = await fetch(url, options);
+          const result = await response.text();
+          console.log(result);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      async function getFacts() {
+        let bDayElement = document.getElementById("date");
+        let date = bDayElement.value;
+        console.log(date);
+        let splittedDate = date.split("-");
+
+        let month = parseInt(splittedDate[1]);
+        let day = parseInt(splittedDate[2]);
+        let okay = `https://numbersapi.p.rapidapi.com/${month}/${day}/date?fragment=true&json=true`;
+
+        let results = Promise.all(
+          Array[3].fill(() => {
+            return makeRequest(okay);
+          })
+        );
+
+        console.log(results);
+
+        // results.forEach((result) => {
+        //   let p = document.createElement("p");
+        //   p.textContent = result;
+        //   document.body.appendChild(p);
+        // });
+      }
+    </script>
+  </body>
+</html>

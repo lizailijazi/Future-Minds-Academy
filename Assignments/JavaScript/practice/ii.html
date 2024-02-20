@@ -1,0 +1,118 @@
+<!-- <!--  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      :root{
+          --bg-color:'white'
+          --text-color:'black'
+      }
+
+      *{
+        color: inherit;
+      }
+
+      body{
+        background-color: var(--bg-color);
+        color: var(--text-color);
+
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      setTimeout(() => {
+        document.body.style.setProperty("--bg-color");
+        document.body.style.setProperty("--text-color");
+      }, 2000);
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sidebar Example</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .menu-button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: #111;
+        color: #fff;
+        overflow-x: hidden;
+        padding-top: 20px;
+        transition: 0.5s;
+      }
+
+      .sidebar a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="menu-button" onclick="toggleSidebar()">Menu</button>
+      <div class="sidebar" id="sidebar">
+        Sidebar content goes here
+
+        <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        Main content goes here
+
+        <h1>Main Content</h1>
+        <p>This is the main content of the page.</p>
+      </div>
+    </div>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+      }
+    </script>
+  </body>
+</html>

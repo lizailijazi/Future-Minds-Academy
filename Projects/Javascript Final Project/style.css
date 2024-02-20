@@ -135,6 +135,10 @@ transform: rotate();
     background-color: orangered;
  }
  
+
+ .sublist-open{
+  display: block;
+ }
  
  .avatar-info{
     display: flex;

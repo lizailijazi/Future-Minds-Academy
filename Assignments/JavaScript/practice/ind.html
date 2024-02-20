@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        firstname;
+        lastname;
+        age;
+
+        //a special function: constructor
+        constructor(fn, ln, ag) {
+          this.firstname = fn;
+          this.lastname = ln;
+          this.ag = ag;
+        }
+
+        //methods
+
+        sayFullName() {
+          console.log(`${this.firstname} ${this.lastname} `);
+        }
+      }
+
+      class Professor extends Person {
+        salary;
+
+        constructor(firstname, lastname, salary) {
+          super(firstname, lastname);
+          this.salary = salary;
+        }
+      }
+
+      let viktori = new Person("viktor", "ahmeti", 22, "12341234");
+      let profa = new Professor("Ridvan", "Aliu", 999999);
+      console.log(viktori.sayFullName());
+      console.log(profa.sayFullName());
+    </script>
+  </body>
+</html>

@@ -16,11 +16,11 @@ else{sidebarControlIcon.innerHTML = 'lists'
 
 
 
-
+let dropdownItems = sidebar.querySelectorAll('.sidebar-item')
 
 // SECOND DROPDOWNS
-let secondDropdown = document.getElementById('second-dropdown-list');
-let dropdown = document.getElementById('dropdown-container')
+let secondDropdown = document.querySelectorAll('second-dropdown-list');
+let dropdown = document.querySelectorAll('dropdown-container')
 // let downArrow = document.getElementById('down')
 
 function displaySecondDropdown() {
@@ -36,7 +36,14 @@ function displaySecondDropdown() {
 
 displaySecondDropdown();
 
-
+// dropdownItems.forEach(item =>{
+//   let secondDropdown = document.getElementById('second-dropdown-list');
+//   if(secondDropdown){
+//     item.addEventListener('click', ()=>{
+//       item.parentElement.classList.toggle('sublist-open')
+//     })
+//   }
+// })
 
 
 
