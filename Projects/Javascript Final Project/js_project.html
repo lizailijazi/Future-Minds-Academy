@@ -1,585 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>CSS Final Project</title>
-  </head>
-  <body>
-    <nav id="nav">
-      <div id="sidebar" class="sidebar">
-        <h2>
-          CP&nbsp;&nbsp;&nbsp;<span class="collapse-element">COOL PAGE</span>
-        </h2>
-        <hr />
-        <div class="nav-element avatar-info">
-          <img
-            src="images/avatar.jpg"
-            alt="a picture of a woman"
-            class="avatar-img"
-          />
-          <h3 class="collapse-element collapse-title">John Doe</h3>
-          <span class="material-icons down collapse-element" title="Down">
-            arrow_drop_down</span
-          ><!--bone secilen element me claass collapse-element-->
-        </div>
-        <hr />
-        <div class="dropdown-menu">
-          <div class="nav-element dashboard" id="dashboard">
-            <span class="material-icons" title="Dashboard">dashboard</span>
-            <p class="collapse-element">Dashboard</p>
-          </div>
-          <ul>
-            <li
-              class="dropdown-elements sidebar-item dropdown-container"
-              id="dropdown-container"
-            >
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Pages">image</span>
-                <p class="collapse-element">Pages</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  <!--bone nkejt elementin-->
-                  arrow_drop_down</span
-                >
-              </div>
 
-              <!-- second dropdown -->
-              <div
-                class="second-dropdown-container"
-                id="secondDropdownContainer"
-              >
-                <ul
-                  class="second-dropdown-list sublist"
-                  id="second-dropdown-list"
-                >
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">P</span>
-                    <p class="second-dropdown-info">Pricing</p>
-                  </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css final project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">RS</span>
-                    <p class="second-dropdown-info">RTL Support</p>
-                  </li>
+</head>
 
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">T</span>
-                    <p class="second-dropdown-info">Timeline</p>
-                  </li>
+<body>
+    <div class="side-bar" id="side-bar">
+        <nav>
+            <div class="side">
 
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">LP</span>
-                    <p class="second-dropdown-info">Login Page</p>
-                  </li>
+                <p class="bar-title"> CP <span class="cp">COOL PAGE</span> </p>
+                <div class="horizontal-line1"></div><br>
+                <div class="user">
+                    <div class="userClick">
+                        <img src="images/avatar.jpg" alt="Avatar image" class="avatar-img">
+                        <p class="user-name">John Doe</p>
+
+                        <span class="material-symbols-outlined expland1">expand_more </span>
+                    </div>
+                    <div class="sub-menu1">
+                        <p><span class="sidebar-mini"> MP </span>
+                            <span class="sidebar-normal"> My Profile </span>
+                        </p>
+                        <p><span class="sidebar-mini"> EP </span>
+                            <span class="sidebar-normal"> Edit Profile </span>
+                        </p>
+                        <p>
+                            <span class="sidebar-mini"> S </span>
+                            <span class="sidebar-normal"> Settings </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="horizontal-line1"></div>
+            <div class="Bar">
+                <ul class="ul-bar">
+                    <li class="menu-bar1 active">
+                        <a href="#">
+                            <i class="material-icons">dashboard</i>
+                            <span class="menu"> Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-bar">
+                        <a href="#">
+                            <i class="material-icons">panorama</i>
+                            <span class="menu"> Pages</span>
+                            <span class="material-symbols-outlined expland">expand_more </span>
+                        </a>
+                        <div class="sub-menu">
+                            <p><span class="sidebar-mini"> P </span>
+                                <span class="sidebar-normal"> Pricing </span>
+                            </p>
+                            <p><span class="sidebar-mini"> RS </span>
+                                <span class="sidebar-normal"> RTL Support </span>
+                            </p>
+                            <p><span class="sidebar-mini"> T </span>
+                                <span class="sidebar-normal"> Timeline </span>
+                            </p>
+                            <p><span class="sidebar-mini"> LP </span>
+                                <span class="sidebar-normal"> Login Page </span>
+                            </p>
+                            <p>
+                                <span class="sidebar-mini"> RP </span>
+                                <span class="sidebar-normal"> Register Page </span>
+                            </p>
+                            <p>
+                                <span class="sidebar-mini"> LSP </span>
+                                <span class="sidebar-normal"> Lock Screen Page </span>
+                            </p>
+                            <p><span class="sidebar-mini"> UP </span>
+                                <span class="sidebar-normal"> User Profile </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-bar">
+                        <a href="#">
+                            <i class="material-icons">apps</i>
+                            <span class="menu">Components</span>
+                            <span class="material-symbols-outlined expland"> expand_more </span>
+                        </a>
+                        <div class="sub-menu">
+                            <p><span class="sidebar-mini"> B </span>
+                                <span class="sidebar-normal"> Buttons </span>
+                            </p>
+                            <p><span class="sidebar-mini"> GS </span>
+                                <span class="sidebar-normal"> Grid System </span>
+                            </p>
+                            <p><span class="sidebar-mini"> P </span>
+                                <span class="sidebar-normal"> Panels </span>
+                            </p>
+                            <p><span class="sidebar-mini"> SA </span>
+                                <span class="sidebar-normal"> Sweet Alert </span>
+                            </p>
+                            <p>
+                                <span class="sidebar-mini"> N </span>
+                                <span class="sidebar-normal"> Notifications </span>
+                            </p>
+                            <p>
+                                <span class="sidebar-mini"> I </span>
+                                <span class="sidebar-normal"> Icons </span>
+                            </p>
+                            <p><span class="sidebar-mini"> T </span>
+                                <span class="sidebar-normal"> Typography </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-bar">
+                        <a href="#">
+                            <i class="material-icons">content_paste</i>
+                            <span class="menu">Forms</span>
+                            <span class="material-symbols-outlined expland"> expand_more </span>
+                        </a>
+                        <div class="sub-menu">
+                            <p><span class="sidebar-mini"> RF </span>
+                                <span class="sidebar-normal"> Regular Forms </span>
+                            </p>
+                            <p><span class="sidebar-mini"> EF </span>
+                                <span class="sidebar-normal"> Extended Forms </span>
+                            </p>
+                            <p><span class="sidebar-mini"> VF </span>
+                                <span class="sidebar-normal"> Validation Forms </span>
+                            </p>
+                            <p><span class="sidebar-mini"> W </span>
+                                <span class="sidebar-normal"> Wizard </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-bar">
+                        <a href="#">
+                            <i class="material-icons">grid_on</i>
+                            <span class="menu">Tables</span>
+                            <span class="material-symbols-outlined expland">expand_more </span>
+                        </a>
+                        <div class="sub-menu">
+                            <p><span class="sidebar-mini"> RT </span>
+                                <span class="sidebar-normal"> Regular Tables </span>
+                            </p>
+                            <p><span class="sidebar-mini"> ET </span>
+                                <span class="sidebar-normal"> Extended Tables </span>
+                            </p>
+                            <p><span class="sidebar-mini"> DT </span>
+                                <span class="sidebar-normal"> DataTables.net </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-bar">
+                        <a href="#">
+                            <i class="material-icons">location_on</i>
+                            <span class="menu"> Maps</span>
+                            <span class="material-symbols-outlined expland"> expand_more </span>
+                        </a>
+                        <div class="sub-menu">
+                            <p><span class="sidebar-mini"> GM </span>
+                                <span class="sidebar-normal"> Google Maps </span>
+                            </p>
+                            <p><span class="sidebar-mini"> FSM </span>
+                                <span class="sidebar-normal"> Full Screen Map </span>
+                            </p>
+                            <p><span class="sidebar-mini"> VM </span>
+                                <span class="sidebar-normal"> Vector Map </span>
+                            </p>
                 </ul>
-              </div>
-            </li>
-            <li
-              class="dropdown-elements sidebar-item dropdown-container"
-              id="dropdown-container"
-            >
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Components">apps</span>
-                <p class="collapse-element">Components</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-              <!-- second dropdown -->
-              <div
-                class="second-dropdown-container"
-                id="secondDropdownContainer"
-              >
-                <ul
-                  class="second-dropdown-list sublist"
-                  id="second-dropdown-list"
-                >
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">B</span>
-                    <p class="second-dropdown-info">Buttons</p>
-                  </li>
-
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">GS</span>
-                    <p class="second-dropdown-info">Grid System</p>
-                  </li>
-
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">P</span>
-                    <p class="second-dropdown-info">Panels</p>
-                  </li>
+                </li>
+                <li class="menu-bar">
+                    <a href="#">
+                        <i class="material-icons">widgets</i>
+                        <span class="menu"> Widgets </span>
+                        <span class="material-symbols-outlined expland">expand_more </span>
+                    </a>
+                </li>
+                <li class="menu-bar">
+                    <a href="#">
+                        <i class="material-icons icon-bar">show_chart</i>
+                        <span class="menu"> Charts</span>
+                        <span class="material-symbols-outlined expland">expand_more </span>
+                    </a>
+                </li>
+                <li class="menu-bar">
+                    <a href="#">
+                        <i class="material-icons">date_range</i>
+                        <span class="menu"> Calendar</span>
+                        <span class="material-symbols-outlined expland"> expand_more </span>
+                    </a>
+                </li>
                 </ul>
-              </div>
-            </li>
-            <li
-              class="dropdown-elements sidebar-item dropdown-container"
-              id="dropdown-container"
-            >
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Forms">content_paste</span>
-                <p class="collapse-element">Forms</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down
-                </span>
-              </div>
-              <!-- second dropdown -->
-              <div
-                class="second-dropdown-container"
-                id="secondDropdownContainer"
-              >
-                <ul
-                  class="second-dropdown-list sublist"
-                  id="second-dropdown-list"
-                >
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">RF</span>
-                    <p class="second-dropdown-info">Regular Forms</p>
-                  </li>
+            </div>
 
-                  <li class="second-dropdown nav-element dropdown">
-                    <span class="second-dropdown-title">EF</span>
-                    <p class="second-dropdown-info">Extended Forms</p>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown-elements">
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Tables">grid_on</span>
-                <p class="collapse-element">Tables</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-            </li>
-            <li class="dropdown-elements">
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Maps">location_on</span>
-                <p class="collapse-element">Maps</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-            </li>
-            <li class="dropdown-elements">
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Widgets">widgets</span>
-                <p class="collapse-element">Widgets</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-            </li>
-            <li class="dropdown-elements">
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Charts">show_chart </span>
-                <p class="collapse-element">Charts</p>
+        </nav>
+    </div>
+    <div class="content">
+        <header>
+            <div class="left">
+                <span class="dashboard">
+                    <i class="material-icons dashboard-icon" id="sidebar-control">more_vert</i>
+                    <span class="tooltip">See More</span> Dashboard</span>
 
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-            </li>
-            <li class="dropdown-elements">
-              <div class="nav-element dropdown">
-                <span class="material-icons" title="Calendar"
-                  >calendar_month</span
-                >
-                <p class="collapse-element">Calendar</p>
-                <span class="material-icons down collapse-element" title="Down">
-                  arrow_drop_down</span
-                >
-              </div>
-            </li>
-          </ul>
+            </div>
+
+            <div class="dashboard-mob">
+                <span>Dashboard</span>
+            </div>
+            <div class="right">
+                <div class="search-icon-details">
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search" class="search">
+                    <p class="searchicon"> <i class="material-icons search-icon">search </i>
+                        <span class="tooltip-search">Search</span>
+                    </p>
+
+                </div>
+                <div class="dashboard1">
+                    <i class="material-icons second-dash-icon"> dashboard</i>
+                    <span class="tooltip1">Dashboard</span>
+                </div>
+                <div class="notifications" data-notifications=" " tabindex="0" id="notificationsContainer">
+                    <i class="material-icons notificationsicon" id="notificationsIcon">
+                        notifications
+                    </i><span class="tooltip-notification">Notifications</span>
+                    <div class="notifications-bar">
+                        <ul id="notifications" class="notifications-list">
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="profil-detalis">
+                    <i class="material-icons personicon">person</i>
+                    <span class="tooltip-profile">Profile</span>
+                </div>
+            </div>
+            <div class="menu-tablet">
+                <i class="material-symbols-outlined"> menu</i>
+                <span class="tooltip-menu">Menu</span>
+            </div>
+        </header>
+
+        <div class="global-item">
+            <div class="global-sales-title">
+                <span class="material-symbols-outlined globicon">language</span>
+                <p class="title-glob">Global Sales by Top Locations</p>
+            </div>
+            <div class="county-map">
+                <div class="county-sales">
+                    <table class="county-lists">
+                        <tr>
+                            <td class="country-name">🇺🇸 USA
+                            </td>
+                            <td>2.920</td>
+                            <td>53.23%</td>
+                        </tr>
+                        <tr>
+                            <td class="country-name">🇩🇪  Germany</td>
+                            <td>1.300</td>
+                            <td>4.34%</td>
+                        </tr>
+                        <tr>
+                            <td class="country-name">🇦🇺 Australia</td>
+                            <td>760</td>
+                            <td>20.43%</td>
+                        </tr>
+                        <tr>
+                            <td class="country-name">🇬🇧 United
+                                Kingdom</td>
+                            <td>690</td>
+                            <td>10.35%</td>
+                        </tr>
+                        <tr>
+                            <td class="country-name">🇷🇴 Romania</td>
+                            <td>600</td>
+                            <td>7.87%</td>
+                        </tr>
+                        <tr>
+                            <td class="country-name">🇧🇷 Brasil
+                            </td>
+                            <td>550</td>
+                            <td>5.94%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="map" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d547732.5222980883!2d-74.18218651588805!3d40.67786241702279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699482932777!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
+        <div class="visits-item">
+            <div class="bookings">
+                <div class="visits-icon">
+                    <i class="material-icons weekend-icon">weekend </i>
+                    <div class="info">
+                        <span class="info1">Bookings</span>
+                        <span class="infonumber">184</span>
+                    </div>
+                </div>
+                <hr class="hr-visits">
+                <div class="visits-under-title">
+                    <i class="material-icons">warning </i>
+                    <span>Get more space</span>
+                </div>
+            </div>
+            <div class="website-visits">
+                <div class="visits-icon">
+                    <i class="material-icons visits-icon1">bar_chart</i>
+                    <div class="info">
+                        <span class="info1">Website Visits</span>
+                        <span class="infonumber">75.521</span>
+                    </div>
+                </div>
+                <hr class="hr-visits">
+                <div class="visits-under-title">
+                    <i class="material-icons">sell</i>
+                    <span> Tracked from Google Analytic</span>
+                </div>
+            </div>
+            <div class="revenue">
+                <div class="visits-icon">
+                    <i class="material-icons storeicon">store</i>
+                    <div class="info">
+                        <span class="info1">Revenue</span>
+                        <span class="infonumber">$34.295</span>
+                    </div>
+                </div>
+                <hr class="hr-visits">
+                <div class="visits-under-title">
+                    <i class="material-icons ">calendar_month </i>
+                    <span>Last 24 Hours</span>
+                </div>
 
-    <main>
-      <div class="settings-container" id="settingsContainer">
-        <div class="fixed-icon" id="fixed-icon">
-          <i class="material-icons">settings</i>
+            </div>
+            <div class="followers">
+                <div class="visits-icon">
+                    <span class="material-symbols-outlined glob-2"> globe_uk</span>
+                    <div class="info">
+                        <span class="info1">Followers</span>
+                        <span class="infonumber">+245</span>
+                    </div>
+                </div>
+                <hr class="hr-visits">
+                <div class="visits-under-title">
+                    <i class="material-icons"> update</i>
+                    <span>Just Update</span>
+                </div>
+            </div>
+
         </div>
-        <div class="settings" id="settings">
-          <div id="sidebarFilters" class="sidebar-filters">
-            <p class="title">SIDEBAR FILTERS</p>
-            <button class="purple color" id="color"></button>
-            <button class="blue color" id="color"></button>
-            <button class="green color" id="color"></button>
-            <button class="yellow color" id="color"></button>
-            <button class="orange color" id="color"></button>
-            <button class="red color" id="color"></button>
+        <section class="card-section">
+          <p class="cards-section-title">Manage Listings</p>
+          <div class="cards-container">
+            <div class="card-1">
+              <div class="card-top">
+                <div class="img-edit">
+                  <img
+                    src="images/card-1.jpeg"
+                    alt="a picture of a castle in the mountains"
+                    class="card-img"
+                  />
+                  <div class="img-edit-icons">
+                    <span class="material-icons options-icon" title="View"
+                      >image</span
+                    ><span class="material-icons edit-icon" title="Edit "
+                      >edit</span
+                    >
+                    <span class="material-icons delete-icon" title="Delete"
+                      >close</span
+                    >
+                  </div>
+                </div>
+                <h3 class="card-title">Cozy 5 Stars Apartment</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                  libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+                </p>
+                <hr />
+              </div>
+  
+              <div class="card-bottom">
+                <div class="card-bottom-start"><p>$899/night</p></div>
+                <div class="card-bottom-end">
+                  <span class="material-icons" title="Location">location_on</span>
+                  <p>Barcelona, Spain</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-2">
+              <div class="card-top">
+                <div class="img-edit">
+                  <img
+                    src="images/card-2.jpeg"
+                    alt="a picture of an office studio"
+                    class="card-img"
+                  />
+                  <div class="img-edit-icons">
+                    <span class="material-icons options-icon" title="View"
+                      >image</span
+                    ><span class="material-icons edit-icon" title="Edit"
+                      >edit</span
+                    >
+                    <span class="material-icons delete-icon" title="Delete"
+                      >close</span
+                    >
+                  </div>
+                </div>
+                <h3 class="card-title">Office Studio</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                  libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+                </p>
+                <hr />
+                <div class="card-bottom">
+                  <div class="card-bottom-start">
+                    <p>$1.119/night</p>
+                  </div>
+                  <div class="card-bottom-end">
+                    <span class="material-icons">location_on</span>
+                    <p>London, UK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-3">
+              <div class="card-top">
+                <div class="img-edit">
+                  <img
+                    src="images/card-3.jpeg"
+                    alt="a picture of an apartment"
+                    class="card-img"
+                  />
+                  <div class="img-edit-icons">
+                    <span class="material-icons options-icon" title="View"
+                      >image</span
+                    ><span class="material-icons edit-icon" title="Edit"
+                      >edit</span
+                    >
+                    <span class="material-icons delete-icon" title="Delete"
+                      >close</span
+                    >
+                  </div>
+                </div>
+                <h3 class="card-title">Beautiful Castle</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                  libero, tenetur, obcaecati hic nesciunt magnam nam eius.
+                </p>
+                <hr />
+                <div class="card-bottom">
+                  <div class="card-bottom-start"><p>$459/night</p></div>
+                  <div class="card-bottom-end">
+                    <span class="material-icons">location_on</span>
+                    <p>Milan, Italy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+  
 
-          <hr />
+            <div class="horizontal-line"></div>
 
-          <div id="sidebarBackground" class="sidebar-background">
-            <p class="title">SIDEBAR BACKGROUND</p>
-            <button
-              class="white color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-            <button
-              class="black color"
-              id="color"
-              onclick="changeBackgroundColor()"
-            ></button>
-          </div>
-
-          <hr />
-
-          <div id="sidebarImage" class="sidebar-image">
-            <p>Sidebar Image</p>
-            <div class="switch-container">
-              <label class="switch">
-                <input type="checkbox" id="imageSwitch" name="imageSwitch" />
+            <footer>
+                <div class="footer-left">
+                    <span class="footer-menu">HOME</span>
+                    <span class="footer-menu">COMPANY</span>
+                    <span class="footer-menu">PORTFOLIO</span>
+                    <span class="footer-menu">BLOG</span>
+                </div>
+                <div class="footer-right">
+                    <span>&copy;John Doe, 2023</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="fixed-icon">
+        <i class="material-icons">settings</i>
+    </div>
+    <div class="dropdown">
+        <div class="filters">
+            <p class="fixed-title">SIDEBAR FILTERS</p>
+            <div class="fixed-colors">
+                <span class="color-circle" selected></span>
+                <span class="color-circle" id="blue" tabindex="0"></span>
+                <span class="color-circle" id="green" tabindex="0"></span>
+                <span class="color-circle" id="orange" tabindex="0"></span>
+                <span class="color-circle" id="red" tabindex="0"></span>
+                <span class="color-circle" id="pink" tabindex="0"></span>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="background">
+            <p class="fixed-title">SIDEBAR BACKGROUND</p>
+            <div class="fixed-colors">
+                <div class="sidebar-circles" id="sidebar-circles">
+                <div id="white-circle" tabindex="0"></div>
+                <div id="black-circle" tabindex="0"></div>
+            </div>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="side-image">
+            <span>Sidebar Image</span>
+            <label class="switch">
+                <input type="checkbox" id="imageSwitch" name="imageSwitch">
                 <span class="slider"></span>
-              </label>
-            </div>
-          </div>
-
-          <hr />
-
-          <div id="sidebarImagesOptions" class="sidebar-images-options">
-            <p class="title">IMAGES</p>
+             </label>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="images">
+            <p class="fixed-title">IMAGES</p>
             <div class="img">
-              <span> <img src="images/sidebar-1.jpg" id="settings-pic" /> </span
-              ><span>
-                <img src="images/sidebar-2.jpg" id="settings-pic" /> </span
-              ><span>
-                <img
-                  src="images/sidebar-2.jpg"
-                  class="straight-pic"
-                  id="settings-pic"
-                /> </span
-              ><span>
-                <img
-                  src="images/sidebar-1.jpg"
-                  class="straight-pic"
-                  id="settings-pic"
-                />
-              </span>
+               <img src="images/sidebar-1.jpg" class="img-holder" tabindex="0" > 
+              <img src="images/sidebar-2.jpg" class="img-holder" tabindex="0"> 
+                <img src="images/sidebar-3.jpg" class="img-holder" tabindex="0"> 
+              <img src="images/sidebar-4.jpg" class="img-holder" tabindex="0">
             </div>
-          </div>
-        </div>
-      </div>
-
-      <header>
-        <div class="header-start">
-          <button id="sidebar-control">
-            <span
-              class="material-icons icon-more"
-              title="See more"
-              id="sidebarCollapseIcon"
-              >more_vert</span
-            >
-          </button>
-
-          <h1 class="header-title">Dashboard</h1>
-        </div>
-        <div class="header-info">
-          <form>
-            <input type="search" class="search-bar" placeholder="Search" />
-          </form>
-          <span class="material-icons search-icon" title="Search">search</span>
-          <span class="material-icons header-icon" title="Dashboard"
-            >dashboard</span
-          >
-          <!-- <div class="notification-bell-info" tabindex="0">
-            <span class="material-icons notification-bell" title="Notifications"
-              >notifications</span
-            >
-            <span class="notifications-number">5</span>
-           // <ul class="notification-bar"> //
-            <ul class="notifications">
-              <li class="notification">John Doe sent a message</li>
-              <li class="notification">Someone viewed your profile</li>
-              <li class="notification">John Doe sent a message</li>
-              <li class="notification">Someone viewed your profile</li>
-              <li class="notification">Another notification</li>
-            </ul>
-          </div> -->
-          <span class="material-icons header-icon" title="Profile">person</span>
-          <span class="material-icons hamburger-icon">menu</span>
-        </div>
-      </header>
-      <article>
-        <div class="article-top">
-          <span class="material-icons globe-icon">language</span>
-          <h2 class="article-title">Global Sales by Top Locations</h2>
-        </div>
-        <div class="article-bottom">
-          <table>
-            <tr class="article-row">
-              <td>🇺🇸 &nbsp;USA</td>
-              <td>2.920 &nbsp; 53.23%</td>
-            </tr>
-            <tr class="article-row">
-              <td>🇩🇪 &nbsp;Germany</td>
-              <td>1.300 &nbsp;&nbsp;4.34%</td>
-            </tr>
-
-            <tr class="article-row">
-              <td>🇦🇺&nbsp;Australia</td>
-              <td>760 &nbsp;&nbsp;20.43%</td>
-            </tr>
-
-            <tr class="article-row">
-              <td>🇬🇧&nbsp;United Kingdom</td>
-              <td>690 &nbsp;&nbsp;10.35%</td>
-            </tr>
-
-            <tr class="article-row">
-              <td>🇷🇴&nbsp;Romania</td>
-              <td>600 &nbsp;&nbsp;7.87%</td>
-            </tr>
-
-            <tr class="article-row no-border-row">
-              <td>🇧🇷 &nbsp;Brasil</td>
-              <td>550 &nbsp;&nbsp;5.94%</td>
-            </tr>
-          </table>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360450263!2d-74.30932624893725!3d40.6975399675532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699902726954!5m2!1sen!2s"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </article>
-
-      <section class="section-info">
-        <div class="section">
-          <div class="section-top">
-            <div>
-              <span class="material-icons section-chair-icon" title="Space"
-                >chair</span
-              >
-            </div>
-            <div>
-              <p class="section-type">Bookings</p>
-              <br />
-              <span class="section-number">184</span>
-            </div>
-          </div>
-          <hr />
-          <div class="section-bottom">
-            <span class="material-icons section-icon" title="Space"
-              >warning</span
-            >
-            <p class="section-type">Get more space</p>
-          </div>
-        </div>
-        <div class="section">
-          <div class="section-top">
-            <div>
-              <span
-                class="material-icons section-trackings-icon"
-                title="Trackings"
-                >bar_charts</span
-              >
-            </div>
-
-            <div>
-              <p class="section-type">Website Visits</p>
-              <br />
-              <span class="section-number">75.521</span>
-            </div>
-          </div>
-          <hr />
-          <div class="section-bottom">
-            <span class="material-icons section-icon" title="Trackings"
-              >sell</span
-            >
-            <p class="section-type">Tracked from Google Analytics</p>
-          </div>
         </div>
 
-        <div class="section">
-          <div class="section-top">
-            <div>
-              <span class="material-icons section-finance-icon" title="Finance"
-                >store</span
-              >
-            </div>
-            <div>
-              <p class="section-type">Revenue</p>
-              <br />
-              <span class="section-number">$34,245</span>
-            </div>
-          </div>
+    </div>
 
-          <hr />
-          <div class="section-bottom">
-            <span class="material-icons section-icon" title="Calendard"
-              >calendar_month</span
-            >
-            <p class="section-type">Last 24 Hours</p>
-          </div>
-        </div>
+    <script src="js/index.js" type="module" defer>
 
-        <div class="section">
-          <div class="section-top">
-            <div>
-              <span class="material-icons section-world-icon" title="World"
-                >public</span
-              >
-            </div>
-            <div>
-              <p class="section-type">Followers</p>
-              <br />
-              <span class="section-number">+245</span>
-            </div>
-          </div>
-          <hr />
-          <div class="section-bottom">
-            <span class="material-icons section-icon" title="Update"
-              >update</span
-            >
-            <p class="section-type">Last Updated</p>
-          </div>
-        </div>
-      </section>
-      <section class="card-section">
-        <h2 class="cards-section-title">Manage Listings</h2>
-        <div class="cards-container">
-          <div class="card-1">
-            <div class="card-top">
-              <div class="img-edit">
-                <img
-                  src="images/card-1.jpeg"
-                  alt="a picture of a castle in the mountains"
-                  class="card-img"
-                />
-                <div class="img-edit-icons">
-                  <span class="material-icons options-icon" title="View"
-                    >image</span
-                  ><span class="material-icons edit-icon" title="Edit "
-                    >edit</span
-                  >
-                  <span class="material-icons delete-icon" title="Delete"
-                    >close</span
-                  >
-                </div>
-              </div>
-              <h3 class="card-title">Cozy 5 Stars Apartment</h3>
-              <p class="card-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
-              </p>
-              <hr />
-            </div>
+        console.log('hello');
+    </script>
+</body>
 
-            <div class="card-bottom">
-              <div class="card-bottom-start"><p>$899/night</p></div>
-              <div class="card-bottom-end">
-                <span class="material-icons" title="Location">location_on</span>
-                <p>Barcelona, Spain</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-top">
-              <div class="img-edit">
-                <img
-                  src="images/card-2.jpeg"
-                  alt="a picture of an office studio"
-                  class="card-img"
-                />
-                <div class="img-edit-icons">
-                  <span class="material-icons options-icon" title="View"
-                    >image</span
-                  ><span class="material-icons edit-icon" title="Edit"
-                    >edit</span
-                  >
-                  <span class="material-icons delete-icon" title="Delete"
-                    >close</span
-                  >
-                </div>
-              </div>
-              <h3 class="card-title">Office Studio</h3>
-              <p class="card-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
-              </p>
-              <hr />
-              <div class="card-bottom">
-                <div class="card-bottom-start">
-                  <p>$1.119/night</p>
-                </div>
-                <div class="card-bottom-end">
-                  <span class="material-icons">location_on</span>
-                  <p>London, UK</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-3">
-            <div class="card-top">
-              <div class="img-edit">
-                <img
-                  src="images/card-3.jpeg"
-                  alt="a picture of an apartment"
-                  class="card-img"
-                />
-                <div class="img-edit-icons">
-                  <span class="material-icons options-icon" title="View"
-                    >image</span
-                  ><span class="material-icons edit-icon" title="Edit"
-                    >edit</span
-                  >
-                  <span class="material-icons delete-icon" title="Delete"
-                    >close</span
-                  >
-                </div>
-              </div>
-              <h3 class="card-title">Beautiful Castle</h3>
-              <p class="card-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                libero, tenetur, obcaecati hic nesciunt magnam nam eius.
-              </p>
-              <hr />
-              <div class="card-bottom">
-                <div class="card-bottom-start"><p>$459/night</p></div>
-                <div class="card-bottom-end">
-                  <span class="material-icons">location_on</span>
-                  <p>Milan, Italy</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr class="footer-hr" />
-      </section>
-
-      <footer>
-        <div class="footer-start">
-          <p class="footer-descripitons">HOME</p>
-          <p class="footer-descripitons">COMPANY</p>
-          <p class="footer-descripitons">PORTFOLIO</p>
-          <p class="footer-descripitons">BLOG</p>
-        </div>
-        <div class="footer-end">
-          <p class="footer-descripitons">John Doe, 2023</p>
-        </div>
-      </footer>
-    </main>
-
-    <script src="js/index.js" type="module"></script>
-  </body>
 </html>
-
-<!-- onclick="if(this.innerHTML =='lists'){this.innerHTML = 'more_vert'}else{this.innerHTML = 'lists' }"  -->
