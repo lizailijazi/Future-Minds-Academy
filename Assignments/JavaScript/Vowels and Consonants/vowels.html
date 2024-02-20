@@ -7,24 +7,20 @@
   </head>
   <body>
     <script>
-      // document.addEventListener("keypress", (e) => {
-      //   let letter = e.key;
-      //   if (letter)
-      //   let vowels = "aeiouy";
-      //   let consonant = "bcdfghjklmnpqrstvwxz";
+      let letter = prompt("Write a letter: ");
+      let vowels = "aeiouy";
 
-      //   if (letter == vowels) {
-      //     console.log("Your key is a vowel!");
-      //   } else if (letter == consonant) {
-      //     console.log("Your key is a consonant!");
-      //   } else if (letter == number) {
-      //     console.log("Your key is a number!");
-      //   } else if (letter == symbol) {
-      //     console.log("Your key is a symbol!");
-      //   } else {
-      //     console.log("Your key is inc");
-      //   }
-      // });
+      letter = letter.toLowerCase();
+
+      if (letter.length !== 1) {
+        console.log("Please write only one letter!");
+      } else {
+        if (!vowels.includes(letter)) {
+          console.log("The letter you have typed is a consonant!");
+        } else {
+          console.log("The letter you typed is NOT a consonant");
+        }
+      }
     </script>
   </body>
 </html>

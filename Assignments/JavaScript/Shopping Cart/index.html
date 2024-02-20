@@ -6,39 +6,27 @@
     <title>Shopping Cart</title>
     <style>
       body {
-        padding: 1rem;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
-      ul {
-        padding: 0;
-        width: 30rem;
-        background-color: pink;
+      .product-card {
+        border: 1px solid #ccc;
         border-radius: 8px;
-        list-style-type: none;
-      }
-
-      li {
-        padding: 1rem;
-        font-size: 1.1rem;
-        border-bottom: 1px solid white;
-        display: flex;
-        justify-content: space-between;
-        color: white;
-      }
-      li:hover {
-        background-color: palevioletred;
-        color: black;
-      }
-
-      p {
-        color: palevioletred;
-        font-size: 1.5rem;
+        margin: 10px;
+        padding: 15px;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
+
   <body>
     <script>
       let cart = [
@@ -92,29 +80,21 @@
         },
       ];
 
-      const itemList = document.createElement("ul");
-
       cart.forEach((item) => {
-        const itemListEl = document.createElement("li");
-        itemListEl.innerHTML = `
-    <span>${item.title}</span>
-    <span>${item.quantity}pcs = $${(item.quantity * item.price).toFixed(
-          2
-        )}</span>
-`;
-        itemList.appendChild(itemListEl);
+        let itemPrice = item.quantity * item.price;
+        document.write(`<div class="product-card">
+                                <h2>${item.title}</h2>
+                                <p>Category: ${item.category}</p>
+                                <p>Quantity: ${item.quantity}</p>
+                                <p>Price: $${itemPrice.toFixed(2)}</p>
+                            </div>`);
       });
-      const totalPrice = cart.reduce(
-        (total, item) => total + item.quantity * item.price,
+
+      let totalPrice = cart.reduce(
+        (a, item) => a + item.quantity * item.price,
         0
       );
-
-      const totalPriceEl = document.createElement("p");
-      totalPriceEl.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
-
-      document.body.appendChild(itemList);
-
-      document.body.appendChild(totalPriceEl);
+      document.write(`<h2>Total Price: $${totalPrice}</h2>`);
     </script>
   </body>
 </html>
