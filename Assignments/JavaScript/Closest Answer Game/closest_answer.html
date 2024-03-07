@@ -93,7 +93,10 @@
         //playerOPne
         playerOneResultWrapper.style.backgroundColor = "green";
         playerTwoResultWrapper.style.backgroundColor = "red";
-      } else if (playerOne === playerTwo) {
+      } else if (
+        playerOne === playerTwo ||
+        playerOneDistance === playerTwoDistance
+      ) {
         //its a tie
         playerOneResultWrapper.style.backgroundColor = "orange";
         playerTwoResultWrapper.style.backgroundColor = "orange";
