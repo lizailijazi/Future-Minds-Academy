@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number1 = parseInt(prompt("Write a number:"));
+      let number2 = parseInt(prompt("Write a number:"));
+      let operator = prompt("Write the operator symbol here;");
+      let result;
+
+      switch (operator) {
+        case "+":
+          result = number1 + number2;
+          break;
+        case "-":
+          result = number1 - number2;
+          break;
+        case "*":
+          result = number1 * number2;
+          break;
+        case "/":
+          result = number1 / number2;
+          if (number2 === 0) {
+            alert("You cannot divide with zero, please choose another number!");
+          }
+          break;
+        case "%":
+          result = number1 % number2;
+      }
+      alert(`${number1} ${operator} ${number2} = ${result}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closest Answer</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+      }
+      .game-container {
+        padding: 0.5rem;
+        margin-top: 15rem;
+        height: 19rem;
+        width: 30rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .correct-answer {
+        color: white;
+        font-size: 2rem;
+      }
+
+      .player-answers {
+        display: flex;
+        justify-content: center;
+      }
+
+      .player-one {
+        padding: 0 2rem 0 2rem;
+        font-size: 1.3rem;
+        color: white;
+      }
+
+      .player-two {
+        padding: 0 2rem 0 2rem;
+        font-size: 1.3rem;
+        color: white;
+      }
+
+      .number {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+      <p class="correct-answer" id="correct-answer">The correct answer is</p>
+      <div class="player-answers">
+        <div class="player-one" id="player-one">
+          <p>Player One</p>
+          <p class="number" id="number1">n</p>
+        </div>
+        <div class="player-two" id="player-two">
+          <p>Player two</p>
+          <p class="number" id="number2">n</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let answer = Math.floor(Math.random() * 20) + 1;
+      let playerOne = parseInt(prompt("Player One:"));
+      let playerTwo = parseInt(prompt("Player Two:"));
+      let correctAnswer = document.getElementById("correct-answer");
+      correctAnswer.textContent = `The correct answer is ${answer}`;
+
+      if (isNaN(playerOne) || isNaN(playerTwo)) {
+        throw new Error("Please write numbers only!");
+      }
+
+      if (playerOne < 0 || playerOne > 20 || playerTwo < 0 || playerTwo > 20) {
+        throw new Error("Only select numbers between 0-20");
+      }
+
+      let playerOneResult = document.getElementById("number1");
+      let playerTwoResult = document.getElementById("number2");
+      playerOneResult.textContent = `${playerOne}`;
+      playerTwoResult.textContent = `${playerTwo}`;
+      let playerOneResultWrapper = document.getElementById("player-one");
+      let playerTwoResultWrapper = document.getElementById("player-two");
+
+      let playerOneDistance = Math.abs(answer - playerOne);
+      let playerTwoDistance = Math.abs(answer - playerTwo);
+
+      if (playerOneDistance < playerTwoDistance) {
+        //playerOPne
+        playerOneResultWrapper.style.backgroundColor = "green";
+        playerTwoResultWrapper.style.backgroundColor = "red";
+      } else if (playerOne === playerTwo) {
+        //its a tie
+        playerOneResultWrapper.style.backgroundColor = "orange";
+        playerTwoResultWrapper.style.backgroundColor = "orange";
+      } else {
+        //playertwo
+        playerTwoResultWrapper.style.backgroundColor = "green";
+        playerOneResultWrapper.style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
