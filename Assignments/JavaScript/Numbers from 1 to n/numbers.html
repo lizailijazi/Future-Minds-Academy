@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let counter = 0;
+      let number = parseInt(prompt("Write a number from 1 to 100:"));
+      let numberString = "";
+      while (counter < number) {
+        numberString = numberString + counter + ", ";
+        counter++;
+      }
+
+      console.log(numberString + number);
+    </script>
+  </body>
+</html>
