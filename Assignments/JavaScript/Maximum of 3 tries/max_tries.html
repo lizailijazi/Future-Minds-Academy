@@ -11,12 +11,20 @@
       let counter = 0;
       let userInput;
       do {
-        userInput = prompt("What is your password?");
-        if (userInput === password) {
-          alert("Welcome Back!");
-        }
+        userInput = prompt(
+          `What is your password? (${3 - counter} ${
+            counter === 2 ? "try" : "tries"
+          } left!)`
+        );
+
         counter++;
       } while (counter < 3 && userInput !== password);
+
+      if (userInput === password) {
+        alert("Welcome Back!");
+      } else {
+        alert("The password is incorrect!");
+      }
     </script>
   </body>
 </html>
