@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Object</title>
+  </head>
+  <body>
+    <script>
+      let circle = {
+        radius: 4,
+        getRadius: () => {
+          return this.radius;
+        },
+        setRadius: (radius) => {
+          this.radius = radius;
+        },
+        getArea: () => {
+          Math.PI * this.radius * this.radius;
+        },
+        getPerimeter: () => {
+          2 * Math.PI * this.radius;
+        },
+        center: {
+          x: 10,
+          y: 5,
+        },
+        getCenter: () => {
+          return this.center;
+        },
+        setCenter: (x, y) => {
+          this.center.x = x;
+          this.center.y = y;
+        },
+        grow: (n) => {
+          return this.radius + n;
+        },
+        shrink: (n) => {
+          return this.radius - n;
+        },
+
+        printDetails: function () {
+          console.log(
+            `This circles radius is = ${this.radius}. This circles center x is ${this.center.x}.This circles center y is ${this.center.y}.`
+          );
+        },
+        equals(otherObject) {
+          if (
+            this.radius == otherObject.radius &&
+            this.center.x == otherObject.center.x &&
+            this.center.y == otherObject.center.y
+          ) {
+            return console.log("true");
+          } else {
+            return console.log("false");
+          }
+        },
+      };
+
+      let otherCircle = {
+        radius: 9,
+        center: { x: 3, y: 7 },
+      };
+
+      circle.printDetails();
+      circle.equals(otherCircle);
+    </script>
+  </body>
+</html>
