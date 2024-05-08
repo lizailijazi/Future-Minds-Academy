@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Textbox</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .textbox {
+        background-color: pink;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 23px;
+        height: 20rem;
+        width: 23rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let textbox = document.createElement("textarea");
+
+      textbox.classList.add("textbox");
+      document.body.append(textbox);
+      textbox.placeholder = "Start typing";
+
+      document.addEventListener("keypress", function (event) {
+        let character = event.key;
+        let currentContent = textbox.textContent;
+        textbox.textContent = currentContent + character;
+      });
+    </script>
+  </body>
+</html>
