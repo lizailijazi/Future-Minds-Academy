@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Dimensions</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: monospace, sans-serif;
+      }
+
+      .rectangle {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        border: 2px solid rgb(30, 100, 143);
+        margin: 50px;
+        background-color: rgb(30, 100, 143);
+        padding: 100px;
+        position: relative;
+      }
+
+      .left-height {
+        left: -40px;
+        position: absolute;
+      }
+
+      .top-width {
+        top: -40px;
+        position: absolute;
+      }
+
+      .bottom-width {
+        bottom: -40px;
+        position: absolute;
+      }
+
+      .right-height {
+        right: -40px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangle">
+      <p class="bottom-width"></p>
+      <p class="top-width"></p>
+      <p class="left-height"></p>
+      <p class="right-height"></p>
+      <div id="dimensions">
+        <p id="area"></p>
+        <p id="perimeter"></p>
+      </div>
+    </div>
+
+    <script>
+      let roomWidth = parseInt(prompt("What is the room's width?"));
+      let roomHeight = parseInt(prompt("What is the room's height?"));
+
+      const room = document.querySelector(".rectangle");
+      const bottomWidth = document.querySelector(".bottom-width");
+      const topWidth = document.querySelector(".top-width");
+      const leftHeight = document.querySelector(".left-height");
+      const rightHeight = document.querySelector(".right-height");
+      const dimensions = document.querySelector("#dimensions");
+      const area = document.querySelector("#area");
+      const perimeter = document.querySelector("#perimeter");
+
+      if (roomHeight > roomWidth) {
+        let temp = roomWidth;
+        roomWidth = roomHeight;
+        roomHeight = temp;
+      }
+
+      room.style.width = roomWidth * 10 + "px";
+      room.style.height = roomHeight * 10 + "px";
+
+      area.textContent = `Area: ${roomHeight * roomWidth}m`;
+      perimeter.textContent = `Perimeter: ${2 * (roomHeight + roomWidth)}m`;
+
+      bottomWidth.textContent = `${roomWidth}m`;
+      topWidth.textContent = `${roomWidth}m`;
+      leftHeight.textContent = `${roomHeight}m`;
+      rightHeight.textContent = `${roomHeight}m`;
+    </script>
+  </body>
+</html>
